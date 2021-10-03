@@ -2,22 +2,20 @@
 @media screen and ( max-width: 600px ){ /* スマホサイズ対応 */}
 ::selection{ background-color: gold; }
 * { font-family: sans-serif; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
-body { -webkit-text-size-adjust: 100%; min-height: 100vh; }
+body { position: relative; min-height: 100vh; padding-bottom: 5em; box-sizing: border-box; }
 #BgH1 { margin-bottom: .7em; background-color: white; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E"); background-attachment: fixed; text-align: center; }
 .blink { -webkit-animation: blink 3s ease infinite; animation: blink 3s ease infinite; padding-left: .5em; color: maroon; font-weight: bold; }
-#sec { width: 90%; border: 3px solid darkblue; margin: .5em; padding: .5em; background-color: whitesmoke; }
-#footer { position: absolute; bottom: 0; width: 100%; height: 2em; background-color: #2D5AA1; text-align: center; padding-top: 2em; color: white; }
+#sec { width: 90%; border: 3px solid darkblue; margin: 1em; padding: .5em; background-color: whitesmoke; }
+#footer { font-size: .8em; position: absolute; bottom: 0; width: 100%; height: 2em; background-color: #2D5AA1; text-align: center; padding-top: 2em; color: white; }
 .ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: 4em; background: #2D5AA1; opacity: 0.8; border-radius: 50%; z-index: 1; }
 .ToTop a{ position: relative; display: block; width: 5em; height: 5em; }
 .ToTop::before{ position: absolute; font-size: .7em; border-top: .3em solid white; border-right: .3em solid white; border-right-radius: 20px; border-radius: 0 .12em; content: ""; transform: translate( 1em, -.5em ) rotate( 315deg ); display: inline-block; padding-top: 0em; padding-left: 0em; width: 1em; height: 1em; right: 2.5em; bottom: .7em; }
-a { text-decoration: none; }
+a { text-decoration: dotted underline crimson 1px; padding: 0 .3em; }
 a:link, a:visited, a:hover, a:active { color: black; }
 .WaveRed { background: url( "../img/wave-red.png" ) bottom repeat-x; background-size: 1em; }
 .link { text-decoration: wavy underline crimson; margin: 0 .5em; text-underline-offset: .2em;  }
 .warningIot { color: #2D5AA1; font-size: .7em; margin: .3em; padding: .2em; border: 1px solid #2D5AA1; border-radius: 5px; box-shadow: 0 1px 0 .5px }
 #pageTitle { font-size: 1.2em; color: #2D5AA1; background-color: lavender; border-left: .3em solid #2D5AA1; padding: .5em; margin: .3em; }
-#kizai { width: 95%; border-collapse: collapse; border: 1px solid black; }
-#kizai td { border: 1px solid black; }
 /* 共通 */
 .CodeMaroon { color: maroon; }
 .FontBold { font-weight: bold; }
@@ -26,3 +24,15 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .MarginB03 { margin-bottom: .3em; }
 .paddingB1em { padding-bottom: 1em; }
 .bold { font-weight: bold; }
+/* リンク */
+a[target="_blank"]::after{ content: url( ../img/BTN_Link.png ); margin: 0 .2em; }
+#kizai td { padding-right: 1em; }
+a.kizai { display: block; }
+a.kizai:hover { opacity: 0.6; }
+.HvLine { display: inline-block; position: relative; text-decoration: none; }
+.HvLine::after { position: absolute; content: ''; bottom: 0; left: 0; width: 0; height: 1px; background: #2196F3; transition: all 0.3s ease 0s; }
+.HvLine:hover { cursor: pointer; }
+.HvLine:hover::after { width: 100%; }
+/* 画像 */
+.kizaiImg1{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }
+.kizaiImg2{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -202px 0px; }
