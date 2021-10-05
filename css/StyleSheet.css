@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and ( max-width: 600px ){ /* スマホサイズ対応 */}
+@media screen and ( max-width: 600px ){ #sec{ margin: .3em!important; }/* スマホサイズ対応 */}
 ::selection{ background-color: gold; }
 * { font-family: sans-serif; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
 body { position: relative; min-height: 100vh; padding-bottom: 5em; box-sizing: border-box; }
