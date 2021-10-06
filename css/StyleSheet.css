@@ -21,6 +21,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .FontBold { font-weight: bold; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
 .MarginL10 { margin-left: 1em; }
+.MarginL05 { margin-left: .5em; }
 .MarginB03 { margin-bottom: .3em; }
 .paddingB1em { padding-bottom: 1em; }
 .bold { font-weight: bold; }
