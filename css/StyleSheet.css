@@ -7,7 +7,7 @@ body { position: relative; min-height: 100vh; padding-bottom: 5em; box-sizing: b
 .blink { -webkit-animation: blink 3s ease infinite; animation: blink 3s ease infinite; padding-left: .5em; color: maroon; font-weight: bold; }
 #sec { width: 90%; border: 3px solid darkblue; margin: 1em; padding: .5em; background-color: whitesmoke; }
 #footer { font-size: .8em; position: absolute; bottom: 0; width: 100%; height: 2em; background-color: #2D5AA1; text-align: center; padding-top: 2em; color: white; }
-.ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: 4em; background: #2D5AA1; opacity: 0.8; border-radius: 50%; z-index: 1; }
+.ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: .5em; background: sandybrown; opacity: .95; border-radius: 50%; border: solid 1px gold; z-index: 1; }
 .ToTop a{ position: relative; display: block; width: 5em; height: 5em; }
 .ToTop::before{ position: absolute; font-size: .7em; border-top: .3em solid white; border-right: .3em solid white; border-right-radius: 20px; border-radius: 0 .12em; content: ""; transform: translate( 1em, -.5em ) rotate( 315deg ); display: inline-block; padding-top: 0em; padding-left: 0em; width: 1em; height: 1em; right: 2.5em; bottom: .7em; }
 a { text-decoration: dotted underline crimson 1px; padding: 0 .3em; }
