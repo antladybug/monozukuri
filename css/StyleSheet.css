@@ -27,7 +27,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .bold { font-weight: bold; }
 .StepNum { font-size: 1.3em; padding-top: .5em; padding-left: 5em; position: relative; }
 .StepNum::before { content: "Step:"; position: absolute; left: .3em; margin-right: .3em; }
-.StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: midnightblue; color: white; }
+.StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: whitesmoke; border: solid 2px darkblue;  }
 /* リンク */
 a[target="_blank"]::after{ content: url( ../img/BTN_Link.png ); margin: 0 .2em; }
 #kizai td { padding-right: 1em; }
