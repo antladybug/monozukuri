@@ -39,4 +39,4 @@ a.kizai:hover { opacity: 0.6; }
 .HvLine:hover::after { width: 100%; }
 /* 画像 */
 .kizaiImg1{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }
-.kizaiImg2{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -203px 0px; }
+.kizaiImg2{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -204px 0px; }
