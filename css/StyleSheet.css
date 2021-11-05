@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and ( max-width: 600px ){ h1{ font-size: 1.1em; } #sec{ margin: .3em!important;} .ToTop{ right: .5em!important; bottom: .5em!important; } /* スマホサイズ対応 */}
+@media screen and ( max-width: 600px ){ .HvLine { height: 3em; } h1{ font-size: 1.1em; } #sec{ margin: .3em!important;} .ToTop{ right: .5em!important; bottom: .5em!important; } /* スマホサイズ対応 */}
 ::selection{ background-color: gold; }
 * { font-family: sans-serif; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
 #wrapper { width: 98%; }
@@ -34,7 +34,7 @@ a[target="_blank"]::after{ content: url( ../img/BTN_Link.png ); margin: 0 .2em; 
 #kizai td { padding-right: 1em; }
 a.kizai { display: block; }
 a.kizai:hover { opacity: 0.6; }
-.HvLine { height: 3em;display: inline-block; position: relative; text-decoration: none; }
+.HvLine { display: inline-block; position: relative; text-decoration: none; }
 .HvLine::after { position: absolute; content: ''; bottom: 0; left: 0; width: 0; height: 1px; background: #2196F3; transition: all 0.3s ease 0s; }
 .HvLine:hover { cursor: pointer; }
 .HvLine:hover::after { width: 100%; }
