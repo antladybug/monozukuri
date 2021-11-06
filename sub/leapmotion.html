@@ -12,22 +12,33 @@
 		<div id = "menu"><a href = "../index.html" class = "ToHome"></a></div>
 		<h1>Leap Motion をつかう</h1>
 		<div id = "wrapper">
-			<a href = "../pdf/[環境準備]LeapMotion.pdf" download = "[環境準備]LeapMotion.pdf">PDFをダウンロードする</a>
+			<div class = "MarginTB10">
+				Leap Motionとは2012年にLeap Motion社から販売された手のジェスチャーによってコンピュータの操作ができる入力機器です。
+				端末の手前に置いて設計された小型USBの周辺装置ですが、首掛けタイプも販売されています。
+			</div>
+			<div class = "MarginTB10">
+				赤外線LEDに照らされた手や指を2基の赤外線カメラで撮影し、画像解析によって3D空間での、手や指の位置を検出できます。
+			</div>
+			<div class = "MarginTB10">
+				モーションキャプチャできるのは両手と指10本で、解析は専用のソフトウェアによって行なわれます。
+				また、手や指の動きは3次元的に捉えることが可能で、上下左右・前後への移動はもちろん、ひねりなどの動作もしっかり捉えられるなど、
+				空間を利用した動作を読み込んだコントロールの実現が可能です。
+			</div>
+			<div id = "JumpOfficial"><a href = "https://www.ultraleap.com/tracking/" target = "_blank">公式サイトへ</a></div>
+			<div class = "MarginTB10">
+				ここでは、Leap Motionをつかうための初期設定から基本的な動作を確認するまでの流れを、ステップごとに紹介していきます。
+			</div>
 			<div class = "StepNum">環境の構築</div>
-			<ul>
-				<li>LeapDeveloperKitのダウンロード～インストール</li>
-				<li>SDKの準備(バージョン確認)</li>
-			</ul>
+				<div id = "Step"><a href = "../pdf/[環境準備]LeapMotion.pdf" download = "[環境準備]LeapMotion.pdf" class = "DL">LeapDeveloperKitのダウンロード～インストール</a></div>
+				<div id = "Step">SDKの準備(バージョン確認)</div>
 			<div class = "StepNum">コーディングの準備</div>
-			<ul>
-				<li>processingのインストール</li>
-				<li>動作に必要なライブラリの格納</li>
+				<div id = "Step">processingのインストール</div>
+				<div id = "Step">動作に必要なライブラリの格納</div>
 			</ul>
 			<div class = "StepNum">基本動作で試してみる</div>
-			<ul>
-				<li>手の動きの検知を確認</li>
-				<li>指の動きの検知をモジュールごとに解析</li>
-				<li>ピースサインの検知コードを作成</li>
+				<div id = "Step">手の動きの検知を確認</div>
+				<div id = "Step">指の動きの検知をモジュールごとに解析</div>
+				<div id = "Step">ピースサインの検知コードを作成</div>
 			</ul>
 			
 			<div id = "troubleS">トラブルシューティング</div>
