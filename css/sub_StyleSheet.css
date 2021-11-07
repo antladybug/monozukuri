@@ -13,14 +13,15 @@ a { text-decoration: none!important; padding: 0!important; }
 h1::before { content: "ものづくりプロジェクト\02160"; padding: .2em 1em; background: white; color: black; border-radius: 5px; margin-right: .5em; }
 h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; margin-bottom: .7em; }
 #title { color: white; width : 30%; margin: .5em; padding: .5em; background: navy; border-radius: 5px; }
-#Step { position:relative; height: 3em; line-height: 3em; vertical-align: middle; margin-left: .7em; background-color: burlywood; margin-bottom: .7em; }
+#Step { position:relative; height: 3em; line-height: 3em; vertical-align: middle; margin-left: .7em; background-color: cadetblue; margin-bottom: .7em; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 1); }
+#Step:hover { transform: translate( -1px, -3px ); opacity: .3; transition-duration: .3s; }
 #menu { height: 3em; }
 #JumpOfficial { position:relative; width: 16em; height: 1em; line-height: 2em; padding: .5em; background: whitesmoke; border: 1px double #2D5AA1; vertical-align: middle; text-align: center; box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, .5 ); }
 #JumpOfficial a, #Step a { padding-left: .7em!important; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 95%; }
-#JumpOfficial:hover, #Step:hover { opacity: .5 }
+#JumpOfficial:hover{ opacity: .5 }
 .ToHome { float: right; margin: .2em; background-image: url( ../img/Tohome.png ); width: 40px; height: 40px; margin-right: .5em; }
 .ToHome:hover { transform: translate( -2px, -1px ); opacity: .7; transition-duration: .3s; }
 #troubleS { color: white; width : 30%; margin: .5em; padding: .5em; background: darkred; border-radius: 5px;  }
-.StepNum { border-bottom: dotted 1px firebrick; margin-bottom: .3em; padding-bottom: .3em; font-size: 1.3em; padding-top: .5em; padding-left: 5em; position: relative; }
+.StepNum { border-bottom: dotted 2px forestgreen; margin-bottom: .3em; padding-bottom: .3em; font-size: 1.3em; padding-top: .5em; padding-left: 5em; position: relative; }
 .StepNum::before { content: "Step:"; position: absolute; left: .3em; margin-right: .3em; }
 .StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: #2D5AA1; color: mintcream; }
