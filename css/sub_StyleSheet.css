@@ -22,6 +22,7 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .ToHome { float: right; margin: .2em; background-image: url( ../img/Tohome.png ); width: 40px; height: 40px; margin-right: .5em; }
 .ToHome:hover { transform: translate( -2px, -1px ); opacity: .7; transition-duration: .3s; }
 #troubleS { color: white; width : 30%; margin: .5em; padding: .5em; background: darkred; border-radius: 5px;  }
-.StepNum { border-bottom: dotted 2px forestgreen; margin-bottom: .3em; padding-bottom: .3em; font-size: 1.3em; padding-top: .5em; padding-left: 5em; position: relative; }
+.StepNum { border-bottom: dotted 2px forestgreen; margin-bottom: 1em; padding-bottom: .3em; font-size: 1.3em; padding-top: .5em; padding-left: 5em; position: relative; }
 .StepNum::before { content: "Step:"; position: absolute; left: .3em; margin-right: .3em; }
 .StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: #2D5AA1; color: mintcream; }
+.making { background-color: #cc3300!important; }
