@@ -28,9 +28,15 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
 .MarginL10 { margin-left: 1em; }
 .MarginL05 { margin-left: .5em; }
+.MarginL02 { margin-left: .2em; }
 .MarginB03 { margin-bottom: .3em; }
+.paddingT1em { padding-top: 1em; }
+.paddingL05 { padding-left: .5em; }
+.padding05 { padding: .5em; }
 .paddingB1em { padding-bottom: 1em; }
+.commentArea { padding: .3rem; background-color: paleturquoise; }
 .bold { font-weight: bold; }
+.WavyRed{ text-decoration: underline wavy red; }
 a[ target = "_blank" ]::after { content: url( ../img/BTN_Link.png ); margin: 0 .2em; }
 a.kizai { display: block; }
 a.kizai:hover { opacity: 0.6; }
@@ -39,13 +45,14 @@ a.kizai:hover { opacity: 0.6; }
 .HvLine:hover { cursor: pointer; }
 .HvLine:hover::after { width: 100%; }
 #kizai td { padding-right: 1em; }
+.Check { padding: .3em; background-color: greenyellow; }
+
 /* 画像 */
 .kizaiImg1 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }
 .kizaiImg2 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -204px 0; }
-.LM3_1Img1 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 184px; height: 142px; }
-.LM3_1Img2 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -148px; }
-.LM3_1Img3 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -295px; }
-.LM3_1Img4 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -452px; }
-.LM3_1Img5 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -608px; }
-.LM3_1Img6 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 400px; height: 100px; background-position: -7px -753px; }
-.LM3_1Img7 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 400px; height: 160px; background-position: 0 -931px; }
+
+/* icons */
+.gg-danger { box-sizing: border-box; position: relative; display: block; transform: scale( var( --ggs,1 ) ); width: 20px; height: 20px; border: 2px solid; border-radius: 40px }
+.gg-danger::after,.gg-danger::before { content: ""; display: block; box-sizing: border-box; position: absolute; border-radius: 3px; width: 2px; background: currentColor; left: 7px }
+.gg-danger::after { top: 2px; height: 8px }
+.gg-danger::before { height: 2px; bottom: 2px}

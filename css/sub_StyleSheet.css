@@ -26,3 +26,25 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .StepNum::before { content: "Step:"; position: absolute; left: .3em; margin-right: .3em; }
 .StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: #2D5AA1; color: mintcream; }
 .making { background-color: #cc3300!important; }
+.CommentBox { margin: .5em 0; padding: .2em; border: .05rem dotted grey; }
+
+/* 画像 */
+/* leapmotion3-1 */
+.LM3_1Img1 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 184px; height: 142px; }
+.LM3_1Img2 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -148px; }
+.LM3_1Img3 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -295px; }
+.LM3_1Img4 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -452px; }
+.LM3_1Img5 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 309px; height: 142px; background-position: 0 -608px; }
+.LM3_1Img6 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 400px; height: 100px; background-position: -7px -753px; }
+.LM3_1Img7 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 400px; height: 160px; background-position: 0 -931px; }
+/* leapmotion3-2:processing */
+.LM3_2_PImg1 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 230px; height: 190px; }
+.LM3_2_PImg2 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 230px; height: 190px; background-position: -262px 0; }
+.LM3_2_PImg3 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 340px; height: 300px; background-position: -150px -250px; }
+.LM3_2_PImg4 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 359px; height: 450px; background-position: 0 -597px; }
+.LM3_2_PImg5 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 400px; height: 363px; background-position: 0 -1174px; }
+.LM3_2_PImg6 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 400px; height: 363px; background-position: 0 -1554px; }
+.LM3_2_PImg7 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 350px; height: 150px; background-position: 0 -2000px; }
+.LM3_2_PImg8 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 350px; height: 150px; background-position: 0 -2000px; }
+.LM3_2_PImg9 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 350px; height: 500px; background-position: -1px -2195px; }
+.LM3_2_PImg10 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 400px; height: 500px; background-position: -1px -2746px; }
