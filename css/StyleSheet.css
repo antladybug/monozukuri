@@ -46,6 +46,7 @@ a.kizai:hover { opacity: 0.6; }
 .HvLine:hover::after { width: 100%; }
 #kizai td { padding-right: 1em; }
 .Check { padding: .3em; background-color: greenyellow; }
+.yellow_line { background:linear-gradient( transparent 60%, yellow 0% ); padding: 0 .2rem; }
 
 /* 画像 */
 .kizaiImg1 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }
