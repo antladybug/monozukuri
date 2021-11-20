@@ -27,6 +27,7 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: #2D5AA1; color: mintcream; }
 .making { background-color: #cc3300!important; }
 .CommentBox { margin: .5em 0; padding: .2em; border: .05rem dotted grey; }
+.GotoCode { padding: .5rem; background-color: black; color: gold; border-radius: .5em; }
 
 /* 画像 */
 /* leapmotion3-1 */
@@ -49,3 +50,10 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .LM3_2_PImg9 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 350px; height: 500px; background-position: -1px -2195px; }
 .LM3_2_PImg10 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 400px; height: 500px; background-position: -1px -2746px; }
 .LM3_2_PImg11 { background: url( "../img/LM3_2_P.png" ); border: .01em grey solid; width: 450px; height: 600px; background-position: 0 -4150px; }
+/* processing2 */
+.ProccesingImg1 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 190px; }
+.ProccesingImg2 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 400px; background-position: 0 -560px; }
+.ProccesingImg3 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 400px; background-position: 0 -1119px; }
+.ProccesingImg4 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 200px; background-position: -1px -1684px; }
+.ProccesingImg5 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 440px; background-position: -1px -2329px; }
+.ProccesingImg6 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 520px; background-position: -1px -2770px; }
