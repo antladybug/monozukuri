@@ -28,6 +28,18 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .making { background-color: #cc3300!important; }
 .CommentBox { margin: .5em 0; padding: .2em; border: .05rem dotted grey; }
 .GotoCode { padding: .5rem; background-color: black; color: gold; border-radius: .5em; }
+.kotira a { text-decoration: dotted underline crimson 2px!important; padding: 0 .3em!important; }
+.kotira a[ target = "_blank" ]::after { content: url( ../img/BTN_Link.png )!important; margin: 0 .2em!important; }
+#OBJ { margin-bottom: .3rem; display: inline-block; border: 1px solid black; border-radius: 5px; padding: 0 .5rem; background-color: wheat; font-weight: bold; }
+.balloonLeftB .child {
+ background: midnightblue;
+ position: relative;
+ width: 50%;
+ color: white; padding: 10px; line-height: 1.7em; }
+.balloonLeftB .child:after { content: ' '; width: 0; height: 0; position: absolute; border: 10px solid transparent; border-top-color: midnightblue; top: 100%; left: 10px; }
+.WordImg td { padding: 20px 5px; }
+.imgSearch { background-color: transparent; background-image: url( "../img/search.png" ); background-repeat: no-repeat; background-attachment: scroll; display: inline-block; }
+.img-imgSearch { width: 113px; height: 115px; }
 
 /* 画像 */
 /* leapmotion3-1 */
@@ -57,3 +69,12 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .ProccesingImg4 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 200px; background-position: -1px -1684px; }
 .ProccesingImg5 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 440px; background-position: -1px -2329px; }
 .ProccesingImg6 { background: url( "../img/Proccesing.png" ); border: .01em grey solid; width: 300px; height: 520px; background-position: -1px -2770px; }
+/* LM_Object */
+.LM_ObjectImg1 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 240px; height: 370px; }
+.LM_ObjectImg2 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 320px; background-position: 0 -493px; }
+.LM_ObjectImg3 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 30px; background-position: -35px -896px; }
+.LM_ObjectImg4 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 30px; background-position: -35px -997px; }
+.LM_ObjectImg5 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 30px; background-position: -35px -1140px; }
+.LM_ObjectImg6 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 500px; background-position: 0 -1363px; }
+.LM_ObjectImg7 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 130px; background-position: -34px -1995px; }
+.LM_ObjectImg8 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 500px; background-position: 0 -2162px; }

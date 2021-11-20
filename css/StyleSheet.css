@@ -26,6 +26,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .CodeGreen { color: green; }
 .FontBold { font-weight: bold; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
+.MarginTB20 { margin-top: 2em; margin-bottom: 2em; }
 .MarginL10 { margin-left: 1em; }
 .MarginL05 { margin-left: .5em; }
 .MarginL02 { margin-left: .2em; }

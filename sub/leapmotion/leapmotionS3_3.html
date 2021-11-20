@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<title>[Processing]ものづくりプロジェクト&#8544;</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../../img/icon.png">
+		<link rel = "stylesheet" href = "../../css/sub_StyleSheet.css" />
+		<link rel = "stylesheet" href = "../../css/StyleSheet.css" />
+	</head>
+	<body id = "Page_top">
+		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
+		<h1 class = "making">オブジェクト解析</h1>
+		<div id = "wrapper">
+			<div class = "MarginTB10">ここでは、LeapMotionを制御するために提供されたオブジェクトを整理します。</div>
+			<div class = "MarginTB10">
+				<div>ultraleap社が、開発者向けの公開しているドキュメントページと、見比べながら解読しましょう。</div>
+				<div id = "JumpOfficial"><a href = "https://developer-archive.leapmotion.com/documentation/java/devguide/Leap_Processing.html" target = "_blank">公開ページへ</a></div>
+			</div>
+			<div class = "MarginTB10">次の画面のうち、<span class = "CodeGreen FontBold">緑枠『簡単なスケッチの作成』</span>のボタンを、クリックします。</div>
+			<div class = "LM_ObjectImg1"></div>
+			<div class = "MarginTB10">画面遷移後、『簡単なスケッチの作成』まで、スクロールダウンします。</div>
+			<div class = "LM_ObjectImg2"></div>
+			<div class = "MarginTB10">次のサンプルコードと照らし合わせながら、解説しましょう。</div>
+			<a href = "https://github.com/antladybug/monozukuri/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_hand.txt」ファイルの格納場所へ</div></a>
+			<div class = "MarginTB10">ドキュメントの冒頭のimport処理では、Leapライブラリを取り込みます。</div>
+			<div class = "LM_ObjectImg3"></div>
+			<div class = "MarginTB10">
+				<div>次に、Leap Motion Controllerオブジェクトを取得します。</div>
+				<div class = "FontBold">※Controllerのリファレンスは<span class = "kotira"><a href = "https://developer-archive.leapmotion.com/documentation/java/api/gen-java/classcom_1_1leapmotion_1_1leap_1_1_controller.html" target = "_blank">こちら</a></span>へ</div>
+			</div>
+			<div class = "LM_ObjectImg4"></div>
+			<div class = "MarginTB10">
+				<div>手や指の検知には、追跡データ（Frameオブジェクト）を利用するため取得します。</div>
+				<div class = "FontBold">※Frameのリファレンスは<span class = "kotira"><a href = "https://developer-archive.leapmotion.com/documentation/java/api/gen-java/classcom_1_1leapmotion_1_1leap_1_1_frame.html" target = "_blank">こちら</a></span>へ</div>
+			</div>
+			<div class = "LM_ObjectImg5"></div>
+			<div class = "MarginTB20">いくつか段階を踏んで、<span id = "OBJ">Controllerオブジェクト</span>の中にある<span id = "OBJ">Frameオブジェクト</span>を利用しているわけです。</div>
+			<div class = "MarginTB10">ものづくりでは、<span class = "yellow_line">リファレンス資料を解読する修練が大事</span>です。</div>
+			<div class="balloonLeftB">
+				<p class="child">
+					制作現場では、コーディングよりも資料あさりの時間がたくさん！
+				</p>
+			</div>
+			<table class = "WordImg">
+				<tr><td align = "left"><span class = "imgSearch img-imgSearch"></span></td></tr>
+			</table>
+			<div class = "MarginTB10">ちなみに、次の画面は<span id = "OBJ">Frameオブジェクト</span>に内包される<span id = "OBJ">HandListオブジェクト</span>のリファレンスです。</div>
+			<div class = "FontBold">※HandListのリファレンスは<span class = "kotira"><a href = "https://developer-archive.leapmotion.com/documentation/java/api/gen-java/classcom_1_1leapmotion_1_1leap_1_1_hand_list.html" target = "_blank">こちら</a></span>へ</div>
+			<div class = "LM_ObjectImg6"></div>
+			<div class = "MarginTB10"><span class = "CodeRed FontBold">赤枠内</span>に、利用可能な関数が列挙してあります。</div>
+			<div class = "FontBold">[練習問題]</div>
+			<div>①「<span class = "yellow_line">test_hand.pde</span>」のプログラムの<span class = "FontBold">draw関数</span>内にて、次の反復文の質問です。</div>
+			<div class = "LM_ObjectImg7"></div>
+			<div class = "MarginTB10"><span class = "CodeGreen FontBold">緑枠内</span>の、<span class = "FontBold">count関数</span>の仕様説明が記述されたWEB上の公開ページのURLを調べてください。</div>
+			<div>②「<span class = "yellow_line">test_hand.pde</span>」のプログラムに、<span class = "FontBold">検知した指の数を出力する処理</span>を追加してください。</div>
+			<div class = "CodeRed MarginL05">※LeapMotionはグーなどで指を隠しても、手のひらの裏の指を認識するので、チョキでもパーでも同じ数(5)が取得されます。</div>
+			<div class = "MarginTB10">ヒント：次のオブジェクト仕様ページの、どこかに答えがあります。</div>
+			<div class = "FontBold">※Frameのリファレンスは<span class = "kotira"><a href = "https://developer-archive.leapmotion.com/documentation/java/api/gen-java/classcom_1_1leapmotion_1_1leap_1_1_frame.html" target = "_blank">こちら</a></span>へ</div>
+			<div class = "LM_ObjectImg8"></div>
+			<div class = "MarginTB10">以上です。</div>
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotionS3_2.html">もどる</a></div>
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotionS3_3.html">次のステップへ</a></div>
+			<div class = "Back"><a href = "../leapmotion/leapmotionS3_2.html"></a></div>
+			<div class = "ToTop"><a href = "#Page_top"></a></div>
+		</div>
+		<div id = "footer">COPYRIGHT© IWASAKI GAKUEN. ALL RIGHTS RESERVED.</div>
+	</body>
+</html>
