@@ -24,6 +24,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .CodeMaroon { color: maroon; }
 .CodeRed { color: red; }
 .CodeGreen { color: green; }
+.CodeYellow { color: gold; }
 .FontBold { font-weight: bold; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
 .MarginTB20 { margin-top: 2em; margin-bottom: 2em; }
@@ -31,6 +32,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .MarginL05 { margin-left: .5em; }
 .MarginL02 { margin-left: .2em; }
 .MarginB03 { margin-bottom: .3em; }
+.MarginB20 { margin-bottom: 2em; }
 .paddingT1em { padding-top: 1em; }
 .paddingL05 { padding-left: .5em; }
 .padding05 { padding: .5em; }
@@ -48,7 +50,9 @@ a.kizai:hover { opacity: 0.6; }
 #kizai td { padding-right: 1em; }
 .Check { padding: .3em; background-color: greenyellow; }
 .yellow_line { background:linear-gradient( transparent 60%, yellow 0% ); padding: 0 .2rem; }
+.linen_line { background:linear-gradient( transparent 60%, plum 0% ); padding: 0 .2rem; }
 .blue_line { background:linear-gradient( transparent 75%, blue 0% ); padding: 0 .2rem; }
+.green_line { background:linear-gradient( transparent 75%, springgreen 0% ); padding: 0 .2rem; }
 
 /* 画像 */
 .kizaiImg1 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }

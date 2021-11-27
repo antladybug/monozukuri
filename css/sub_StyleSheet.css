@@ -31,16 +31,16 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .kotira a { text-decoration: dotted underline crimson 2px!important; padding: 0 .3em!important; }
 .kotira a[ target = "_blank" ]::after { content: url( ../img/BTN_Link.png )!important; margin: 0 .2em!important; }
 #OBJ { margin-bottom: .3rem; display: inline-block; border: 1px solid black; border-radius: 5px; padding: 0 .5rem; background-color: wheat; font-weight: bold; }
-.balloonLeftB .child {
- background: midnightblue;
- position: relative;
- width: 50%;
- color: white; padding: 10px; line-height: 1.7em; }
+.balloonLeftB .child { background: midnightblue; position: relative; width: 50%; color: white; padding: 10px; line-height: 1.7em; }
 .balloonLeftB .child:after { content: ' '; width: 0; height: 0; position: absolute; border: 10px solid transparent; border-top-color: midnightblue; top: 100%; left: 10px; }
 .WordImg td { padding: 20px 5px; }
 .imgSearch { background-color: transparent; background-image: url( "../img/search.png" ); background-repeat: no-repeat; background-attachment: scroll; display: inline-block; }
 .img-imgSearch { width: 113px; height: 115px; }
 .Syutten { font-size: .3rem; color: grey; }
+.midasi{ display:block; font-weight: bold; font-size: 1.3rem; width: 95%; background-color: powderblue; padding-left: 1.5em; position:relative; }
+.midasi:before,.midasi:after{ content:""; display: block; position:absolute; }
+.midasi:before{ width: 1rem; height: 1.2rem; background: white; border: 1px solid #000000; left: 3px; top: .4rem;}
+.midasi:after{ border-left: 3px solid #2D5AA1; border-bottom: 3px solid #2D5AA1; width: 18px; height: 5px; -webkit-transform: rotate( -45deg ); transform: rotate( -45deg ); left: 6px; top: 8px; }
 
 /* 画像 */
 /* leapmotion3-1 */
@@ -81,4 +81,12 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .LM_ObjectImg8 { background: url( "../img/LM_Object.png" ); border: .01em grey solid; width: 300px; height: 500px; background-position: 0 -2162px; }
 /* LM_3_4 */
 .LM_3_4Img1 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 170px; }
-.LM_3_4Img2 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 320px; background-position: 0 -493px; }
+.LM_3_4Img2 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 235px; background-position: 0 -182px; }
+.LM_3_4Img3 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 130px; background-position: 0 -427px; }
+.LM_3_4Img4 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 110px; background-position: -3px -640px; }
+.LM_3_4Img5 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 100px; background-position: 0 -785px; }
+.LM_3_4Img6 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 70px; background-position: -11px -899px; }
+.LM_3_4Img7 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 70px; background-position: -15px -985px; }
+.LM_3_4Img8 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 70px; background-position: 0 -1090px; }
+.LM_3_4Img9 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 70px; background-position: 0 -1202px; }
+.LM_3_4Img10 { background: url( "../img/LM3_4.png" ); border: .01em grey solid; width: 300px; height: 70px; background-position: 0 -1330px; }

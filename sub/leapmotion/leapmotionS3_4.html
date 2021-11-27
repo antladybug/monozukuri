@@ -12,17 +12,127 @@
 		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
 		<h1 class = "making">APIの概要</h1>
 		<div id = "wrapper">
-			<div class = "MarginTB10">Leap Motionシステムは、手と指を認識して追跡します。ここでは、コントローラの詳細を、公開資料を見ながら習得します。</div>
+			<div class = "MarginTB10">Leap Motionシステムは、手と指を認識して追跡します。
+			ここでは、「<span class = "yellow_line">test_hand.pde</span>」と、コントローラの仕様を、LeapMotionの文献とあわせて習得しましょう。</div>
 			<div class = "MarginTB10">
-				<div>次の、APIの概要ページを参考に学習します。</div>
+				<div>次の参考文献『APIの概要』をもとに学習します。</div>
 				<div id = "JumpOfficial"><a href = "https://developer-archive.leapmotion.com/documentation/java/devguide/Leap_Overview.html" target = "_blank">公開ページへ</a></div>
+			</div>
+			<div class = "MarginTB10">下の図は、Leap Motionコントローラが光学センサーと赤外線を使用して、手を検知、追跡するイメージ図です。</div>
+			<div>コントローラの有効範囲は、デバイスの約25〜600ミリメートル（ 5.8cm～60.96cm ）上です。</div>
+			<div class = "LM_3_4Img2"></div>
+			<div class = "Syutten">出典元:https://developer-archive.leapmotion.com/documentation/java/devguide/Leap_Overview.html#hands</div>
+			
+			<div class = "MarginTB10">
+				<div><span class = "FontBold">モーショントラッキングデータ</span>について整理します。</div>
+				<div class = "CodeGreen">※追跡、または検知をトラッキングといいます。</div>
+			</div>
+			<div class = "MarginTB10">
+				<div>デバイスの視野内の手と指を追跡する情報は、<span id = "OBJ">Frameオブジェクト</span>が内包しています。</div>
+				<div><span id = "OBJ">Frameオブジェクト</span>は、オブジェクト構造の最上位( Root )にあり、「手」「腕」「指」のトラッキングデータを格納しています。</div>
+			</div>
+			<span class="midasi">手( ハンドモデル )</span>
+			<div class = "MarginTB10 ">ハンドモデルは、手のIDや位置情報などを管理します。<span id = "OBJ">Handクラス</span>を取得すれば、プログラムで制御できます。</div>
+			<div>「<span class = "yellow_line">test_hand.pde</span>」のプログラムの下の<span class = "CodeRed">赤枠</span>の箇所にて取得してます。</div>
+			<div class = "LM_3_4Img3"></div>
+			<div class = "MarginTB10">
+				<div>Frameオブジェクトの参考文献です。</div>
+				<div id = "JumpOfficial"><a href = "https://developer-archive.leapmotion.com/documentation/java/api/gen-java/classcom_1_1leapmotion_1_1leap_1_1_frame.html#a06e1aae4587d103bdffc62ae2f92d0b1" target = "_blank">公開ページへ</a></div>
+			</div>
+			<div class = "MarginTB10">
+				文献には、<span id = "OBJ">handクラス</span>と<span id = "OBJ">handsクラス</span>があるのを確認しましょう。
+			</div>
+			<div class = "MarginTB10">
+				<span id = "OBJ">handsクラス</span>のメンバのうち、<span id = "OBJ">HandList</span>は、検知した手の本数分のデータを、オブジェクト配列で格納してます。
+				</div>
+			<div class = "MarginTB10">
+				「<span class = "yellow_line">test_hand.pde</span>」では、<span id = "OBJ">handsクラス</span>で全ての手の情報を取得してから、ループ処理で1本ずつ<span id = "OBJ">handクラス</span>にて手の情報を取得していきます。
+			</div>
+			<div class = "CommentBox paddingL05">
+				<i class="gg-danger"></i>
+				<div>制作の場面では膨大な資料の中から、必要な情報とそうでない情報をふり分ける力が必要です。</div>
+				<div>この<span class = "green_line"><span class = "FontBold">長時間に及ぶ解読作業</span>は、制作現場では必ず訪れます</span>。</div>
+				<div>積極的に取り組んでください。</div>
+			</div>
+			<div class = "MarginTB10">
+				「<span class = "yellow_line">test_hand.pde</span>」のプログラムの下の<span class = "CodeRed">赤枠</span>の箇所にて、
+				<span id = "OBJ">handsクラス</span>のメンバのうち、<span id = "OBJ">count関数</span>を利用して、検知した手の本数だけ、ループ処理を実行しています。
+			</div>
+			<div class = "LM_3_4Img4"></div>
+			<div class = "MarginTB10">
+				次に、<span class = "CodeRed">赤枠</span>の箇所にて、
+				<span id = "OBJ">handsクラス</span>のメンバのうち、<span id = "OBJ">get関数</span>を利用して、検知した手の座標位置を取得しています。
+			</div>
+			<div class = "LM_3_4Img5"></div>
+			<div class = "MarginTB10">
+				<span class = "CodeGreen FontBold">緑の下線</span>の箇所では、
+				<span id = "OBJ">get関数</span>の返却値は、<span id = "OBJ">handクラス</span>で受け取ります。
+			</div>
+			<div class = "MarginTB10">
+				<div>次に、<span id = "OBJ">handクラス</span>のメンバの、<span id = "OBJ">id関数</span>で取得した手のIDを取得します。</div>
+				<div><span class = "CodeRed">赤枠</span>の箇所です。</div>
+			</div>
+			<div class = "LM_3_4Img10"></div>
+			<div class = "MarginTB10">
+				下図のprocessingで起動したプログラム、「<span class = "yellow_line">test_hand.pde</span>」で表示した情報を確認ください。
+			</div>
+			<div class = "LM_3_4Img9"></div>
+			<div class = "MarginTB10">
+				<div>Processingのtext関数で、取得した手のIDを表示します。</div>
+				<div><span class = "CodeYellow FontBold">黄色の下線</span>の箇所です。</div>
+				<div>IDは、<span class = "yellow_line">test_hand.pde</span>プログラム起動から1ずつカウントアップしていきます。</div>
+				<div>図の場合、18回目と19回目に認識した手の情報を表示しています。</div>
+			</div>
+			<div class = "MarginTB10 MarginB20">
+				IDの次に表示する座標情報は、次の項目で紹介します。
+			</div>
+			<span class="midasi">座標系</span>
+			<div class = "MarginTB10">
+				<span id = "OBJ">palmPosition関数</span>で、手の位置を取得します。
 			</div>
 			<div class = "MarginTB10">Leap Motionで得られる手や指の位置のデータは、座標系で管理されます。</div>
 			<div class = "LM_3_4Img1"></div>
 			<div class = "Syutten">出典元:https://developer-archive.leapmotion.com/documentation/java/devguide/Leap_Overview.html</div>
+			
 			<div class = "MarginTB10">
-				<div><span class = "FontBold">モーショントラッキングデータ</span>について解読しましょう。</div>
-				<div class = "CodeRed">※追跡、または検知をトラッキングといいます。</div>
+				<span class = "CodeRed">赤枠</span>の箇所にて、
+				<span id = "OBJ">palmPosition関数</span>で、LeapMotionコントローラから、検知した手の平の位置情報を取得します。
+			</div>
+			<div class = "LM_3_4Img6"></div>
+			<div class = "MarginTB10">
+				<span class = "CodeGreen FontBold">緑の下線</span>の箇所では、
+				<span id = "OBJ">palmPosition関数</span>の返却値は、<span id = "OBJ">Vectorクラス</span>で受け取ります。
+			</div>
+			<div class = "MarginTB10">
+				※<span id = "OBJ">palmPosition関数</span>内部では、手の平の位置の値は、X軸→Y軸→Z軸の順で保持されています。
+			</div>
+			<div class = "MarginTB10">
+				<span id = "OBJ">Vectorクラス</span>のメンバ、<span id = "OBJ">toString関数</span>を利用して手の位置を取得します。
+			</div>
+			<div class = "LM_3_4Img7"></div>
+			<div class = "MarginTB10">
+				<div>Vectorクラスの参考文献です。</div>
+				<div id = "JumpOfficial"><a href = "https://developer-archive.leapmotion.com/documentation/java/api/gen-java/classcom_1_1leapmotion_1_1leap_1_1_vector.html#ad146fa8579a5f8a876c4688cc5a68520" target = "_blank">公開ページへ</a></div>
+			</div>
+			<div class = "MarginTB10">
+				下図のprocessingで起動したプログラム、「<span class = "yellow_line">test_hand.pde</span>」で表示した情報を確認ください。
+			</div>
+			<div class = "LM_3_4Img8"></div>
+			<div class = "MarginTB10">
+				<div>単位はmmで返却されます。</div>
+				<div>最初に、X軸の距離3.24908mmが表示、</div>
+				<div>次に、Y軸の距離91.618mmが表示、</div>
+				<div>最後に、Z軸の距離17.6043mmが表示されます。</div>
+			</div>
+			<div class = "LM_3_4Img1"></div>
+			<div class = "MarginTB10">
+				・LeapMotionコントローラ（緑ランプが見える方が手前）を起点に、X軸が<span class = "linen_line FontBold">プラス値なら、右方向</span>、<span class = "linen_line FontBold">マイナス値なら左方向</span>となります。
+			</div>
+			<div class = "MarginTB10">
+				・LeapMotionコントローラ（緑ランプが見える方が手前）を起点に、Y軸が<span class = "linen_line FontBold">プラス値なら、上方向</span>、<span class = "linen_line FontBold">マイナス値なら下方向</span>となります。
+			</div>
+			<div class = "MarginTB10">
+				・LeapMotionコントローラが検知した手を起点に、Z軸が<span class = "linen_line FontBold">プラス値なら、手前方向（近づく）</span>、<span class = "linen_line FontBold">マイナス値なら手前と反対方向（遠ざかる）</span>となります。
 			</div>
 			<div class = "MarginTB10">以上です。</div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotionS3_2.html">もどる</a></div>
