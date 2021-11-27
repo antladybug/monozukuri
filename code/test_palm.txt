@@ -1,0 +1,39 @@
+import com.leapmotion.leap.*;
+
+Controller leap = new Controller();
+InteractionBox iBox;
+
+void setup() {
+	size( 800, 600, P3D );
+}
+ 
+void draw() {
+	background( 0 );
+	Frame frame = leap.frame();
+	HandList hands = frame.hands();
+	iBox = frame.interactionBox();
+	for(int i = 0; i < hands.count(); i++) {
+	Hand hand = hands.get(i);
+	drawPalm( hand );
+	}
+}
+ 
+void drawPalm(Hand hand) {
+	Vector palmPos = hand.palmPosition();
+	Vector palmPosNorm = iBox.normalizePoint(palmPos, false);
+	pushMatrix();
+	translate(
+		palmPosNorm.getX() * width,
+		( 1 - palmPosNorm.getY() ) * height,palmPosNorm.getZ() * 50
+	);
+	rotateX( -1 * hand.direction().pitch() );
+	rotateY( -1 * hand.direction().yaw() );
+	rotateZ( -1 * hand.palmNormal().roll() );
+	noStroke();
+	fill(255);
+	lights();
+	box ( 80, 10, 100 );
+	stroke(255);
+	line ( 0, 0, 0, 50 );
+	popMatrix();
+}

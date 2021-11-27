@@ -1,0 +1,17 @@
+import com.leapmotion.leap.*;					// LeapMotion本体をインポート
+Controller leap = new Controller();				// コントローラオブジェクトを変数名「leap」に代入
+
+void setup() { size( 800, 600 ); }				// ウィンドウサイズの初期化( 800 × 600ピクセルサイズ )
+
+void draw() {									// 描画関数
+	background(0);								// ウィンドウの背景色を黒( 0 )に設定
+	Frame frame = leap.frame();					// flameオブジェクトを変数名「frame」に代入
+	HandList hands = frame.hands();				// HandList構造のオブジェクト配列を変数「hands」に代入
+	for(int i = 0; i < hands.count(); i++) {	// 手の数だけ、ループを繰り返す
+		Hand hand = hands.get(i);				// コントローラから検知した手のひらの位置を変数「hand」に代入( i番目 )
+		Vector palmPos = hand.palmPosition();	// handの座標位置を、Vector構造のオブジェクト変数「palmPos」に代入
+		textSize(40);							// ウィンドウに表示するフォントサイズ( 40 )を設定
+												// 取得した座標位置を、X→Y→Zの順にウィンドウに出力( palmPos.toString )
+		text( hand.id() + palmPos.toString(), 0, 40 * ( i + 1 ) );
+	}
+}
