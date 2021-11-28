@@ -2,6 +2,7 @@
 @media screen and ( max-width: 600px ){
 /* スマホサイズ対応 */
 h1::before { font-size: .5em; margin-right: 1em!important; }
+#CodeSpace { font-size: .7em; }
 }
 ::selection{ background-color: gold; }
 * { font-family: sans-serif; word-break: keep-all; overflow-wrap: break-word; margin: 0; padding: 0; }
@@ -27,7 +28,7 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .StepNum::after { counter-increment: stepNum 1; content: counter( stepNum ); position: absolute; width: 1.5em; left: 3em; top: .3em; height: 1.5em; border-radius: 50%; text-align: center; background: #2D5AA1; color: mintcream; }
 .making { background-color: #cc3300!important; }
 .CommentBox { margin: .5em 0; padding: .2em; border: .05rem dotted grey; }
-.GotoCode { padding: .5rem; background-color: black; color: gold; border-radius: .5em; }
+.GotoCode { width: 93%;padding: .5rem; background-color: black; color: gold; border-radius: .5em; }
 .kotira a { text-decoration: dotted underline crimson 2px!important; padding: 0 .3em!important; }
 .kotira a[ target = "_blank" ]::after { content: url( ../img/BTN_Link.png )!important; margin: 0 .2em!important; }
 #OBJ { margin-bottom: .3rem; display: inline-block; border: 1px solid black; border-radius: 5px; padding: 0 .5rem; background-color: wheat; font-weight: bold; }
@@ -37,10 +38,25 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .imgSearch { background-color: transparent; background-image: url( "../img/search.png" ); background-repeat: no-repeat; background-attachment: scroll; display: inline-block; }
 .img-imgSearch { width: 113px; height: 115px; }
 .Syutten { font-size: .3rem; color: grey; }
-.midasi{ display:block; font-weight: bold; font-size: 1.3rem; width: 95%; background-color: powderblue; padding-left: 1.5em; position:relative; }
+.midasi{ display:block; font-weight: bold; font-size: 1.2rem; width: 93%; background-color: powderblue; padding-top: .2em; padding-left: 1.5em; position:relative; }
 .midasi:before,.midasi:after{ content:""; display: block; position:absolute; }
 .midasi:before{ width: 1rem; height: 1.2rem; background: white; border: 1px solid #000000; left: 3px; top: .4rem;}
 .midasi:after{ border-left: 3px solid #2D5AA1; border-bottom: 3px solid #2D5AA1; width: 18px; height: 5px; -webkit-transform: rotate( -45deg ); transform: rotate( -45deg ); left: 6px; top: 8px; }
+.FileType{ max-width: 20%; background-color: #2D5AA1; padding-left: .3rem; padding-top: .3rem; color: white; border-radius: 5px 5px 0 0; font-size: .9em; }
+.SorceCode {
+ counter-increment: StepNum 1;
+ background-color: black;
+ color: white;
+}
+.SorceCode::before {
+ content: counter(StepNum, decimal-leading-zero);
+ color: #2D5AA1;
+ padding: 0 .2rem;
+ margin-right: .3rem;
+ background-color: black;
+ border-right: solid thin grey;
+}
+#CodeSpace { width: 93%; }
 
 /* 画像 */
 /* leapmotion3-1 */

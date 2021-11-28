@@ -26,7 +26,10 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .CodeGreen { color: green; }
 .CodeYellow { color: gold; }
 .FontBold { font-weight: bold; }
+.PaddingTB0{ margin-top: 0; margin-bottom: 0; }
+.PaddingTB05{ margin-top: .5em; margin-bottom: .5em; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
+.MarginTB05 { margin-top: 1em; margin-bottom: .5em; }
 .MarginTB20 { margin-top: 2em; margin-bottom: 2em; }
 .MarginL10 { margin-left: 1em; }
 .MarginL05 { margin-left: .5em; }
@@ -35,6 +38,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .MarginB20 { margin-bottom: 2em; }
 .paddingT1em { padding-top: 1em; }
 .paddingL05 { padding-left: .5em; }
+.paddingL03 { padding-left: .3em; }
 .padding05 { padding: .5em; }
 .paddingB1em { padding-bottom: 1em; }
 .commentArea { padding: .3rem; background-color: paleturquoise; }

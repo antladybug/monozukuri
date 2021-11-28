@@ -13,6 +13,25 @@
 		<h1 class = "making">3Dで指を色別に表示する</h1>
 		<div id = "wrapper">
 			<div class = "MarginTB10">ここでは、いくつかのサンプルコードを紹介します。</div>
+			<span class="midasi">手のひらを3Dで表示する</span>
+			<div class = "MarginTB05">「<span class = "yellow_line">test_palm.pde</span>」のプログラムと照らし合わせみながら、解析しましょう。</div>
+			<a href = "https://github.com/antladybug/monozukuri/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_palm.txt」ファイルの格納場所へ</div></a>
+			<div class = "CommentBox paddingL05">
+				<i class="gg-danger"></i>
+				<div>サンプルの拡張子は、『<span class = "CodeMaroon linen_line">txt</span>』です。</div>
+				<div>processingで動作させるときは拡張子『<span class = "CodeMaroon linen_line">pde</span>』で利用ください。</div>
+			</div>
+			<div class = "MarginTB05" id = "CodeSpace">
+				<div class="FileType">test_palm.pde</div>
+				<div class="SorceCode">import com.leapmotion.leap.*;</div>
+				<div class="SorceCode"></div>
+				<div class="SorceCode">Controller leap = new Controller();</div>
+				<div class="SorceCode">InteractionBox iBox;</div>
+				<div class="SorceCode"></div>
+				<div class="SorceCode">void setup() {</div>
+				<div class="SorceCode">  size( 800, 600, P3D );</div>
+				<div class="SorceCode">}</div>
+			</div>
 			<div class = "MarginTB10">以上です。</div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotion.html#MoveBase">もどる</a></div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotionS3_6.html">次のステップへ</a></div>
