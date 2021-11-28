@@ -31,6 +31,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .FontBold { font-weight: bold; }
 .PaddingTB0{ margin-top: 0; margin-bottom: 0; }
 .PaddingTB05{ margin-top: .5em; margin-bottom: .5em; }
+.MarginT30 { margin-top: 3em; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
 .MarginTB05 { margin-top: 1em; margin-bottom: .5em; }
 .MarginTB20 { margin-top: 2em; margin-bottom: 2em; }
