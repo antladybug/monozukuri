@@ -20,11 +20,14 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .link { text-decoration: wavy underline crimson; margin: 0 .5em; text-underline-offset: .2em;  }
 .warningIot { color: #2D5AA1; font-size: .7em; margin: .3em; padding: .2em; border: 1px solid #2D5AA1; border-radius: 5px; box-shadow: 0 1px 0 .5px }
 #pageTitle { font-weight: bold; font-size: 1.1em; color: darkblue; background-color: lavender; border-left: .3em solid #2D5AA1; padding: .5em; margin: .3em; }
+#MidasiUl { font-weight: bold; padding: .5rem; width: 80%; background-color: darkgreen; margin-bottom: .5rem; border: .5rem darkorange solid; }
+
 /* 共通 */
-.CodeMaroon { color: maroon; }
 .CodeRed { color: red; }
 .CodeGreen { color: green; }
 .CodeYellow { color: gold; }
+.Codeyellow { color: yellow; }
+.CodeDeepskyblue { color: deepskyblue; }
 .FontBold { font-weight: bold; }
 .PaddingTB0{ margin-top: 0; margin-bottom: 0; }
 .PaddingTB05{ margin-top: .5em; margin-bottom: .5em; }

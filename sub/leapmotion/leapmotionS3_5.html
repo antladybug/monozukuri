@@ -13,7 +13,12 @@
 		<h1 class = "making">3Dで指を色別に表示する</h1>
 		<div id = "wrapper">
 			<div class = "MarginTB10">ここでは、いくつかのサンプルコードを紹介します。</div>
-			<span class="midasi">手のひらを3Dで表示する</span>
+			<div id = "MidasiUl">
+				<div><a href = "#palm" style = "color: white!important;">・手のひらを3Dで表示する</a></div>
+				<div><a href = "#finger" style = "color: white!important;">・指を3Dで表示する</a></div>
+				<div><a href = "#fingercolor" style = "color: white!important;">・[演習]指の色わけ制御の練習</a></div>
+			</div>
+			<span class="midasi" id = "palm">手のひらを3Dで表示する</span>
 			<div class = "MarginTB05">「<span class = "yellow_line">test_palm.pde</span>」のプログラムと照らし合わせみながら、解析しましょう。</div>
 			<a href = "https://github.com/antladybug/monozukuri/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_palm.txt」ファイルの格納場所へ</div></a>
 			<div class = "CommentBox paddingL05">
@@ -23,14 +28,112 @@
 			</div>
 			<div class = "MarginTB05" id = "CodeSpace">
 				<div class="FileType">test_palm.pde</div>
-				<div class="SorceCode">import com.leapmotion.leap.*;</div>
+				<div class="SorceCode"><span class = "CodeDeepskyblue">import</span> <span class = "CodeRed">com.leapmotion.leap.*</span>;</div>
 				<div class="SorceCode"></div>
-				<div class="SorceCode">Controller leap = new Controller();</div>
-				<div class="SorceCode">InteractionBox iBox;</div>
+				<div class="SorceCode"><span class = "Codeyellow">Controller</span> <span class = "CodeRed">leap = new Controller()</span>;</div>
+				<div class="SorceCode"><span class = "Codeyellow">InteractionBox</span> <span class = "CodeRed">iBox</span>;</div>
 				<div class="SorceCode"></div>
-				<div class="SorceCode">void setup() {</div>
-				<div class="SorceCode">  size( 800, 600, P3D );</div>
-				<div class="SorceCode">}</div>
+				<div class="SorceCode"><span class = "CodeGreen">void setup() {</span></div>
+				<div class="SorceCode"><span class = "CodeGreen">  size( 800, 600, P3D );</span></div>
+				<div class="SorceCode"><span class = "CodeGreen">}</span></div>
+			</div>
+			<div class = "MarginTB05">
+				<div>LeapJavaの読込と、コントローラ本体・座標変換オブジェクトを取得しています。</div>
+				<div>そのあと、ウィンドウサイズの設定をします。</div>
+			</div>
+			<div class = "MarginTB05">
+				次のdraw関数の詳細は、<a href = "file:///C:/Users/Wada/Desktop/%E3%82%82%E3%81%AE%E3%81%A5%E3%81%8F%E3%82%8A/WEB%E6%95%99%E6%9D%90/sub/leapmotion/leapmotionS3_4.html" target = "_blank" style = "text-decoration: underline solid red!important; }">APIの概要</a>にて紹介してます。
+			</div>
+			<div class = "MarginTB05" id = "CodeSpace">
+				<div class="FileType">test_palm.pde</div>
+				<div class="SorceCode CodeDeepskyblue" style = "counter-increment: StepNum 21!important;">void drawPalm(Hand hand) {</div>
+				<div class="SorceCode CodeRed">&ensp;<span class = "CodeYellow">Vector palmPos</span> = hand.palmPosition();</div>
+				<div class="SorceCode CodeRed">&ensp;<span class = "CodeYellow">Vector palmPosNorm</span> = iBox.normalizePoint(palmPos, false);</div>
+				<div class="SorceCode">&ensp;pushMatrix();</div>
+				<div class="SorceCode">&ensp;translate(</div>
+				<div class="SorceCode">&ensp;&ensp;palmPosNorm.getX() * width,</div>
+				<div class="SorceCode">&ensp;&ensp;( 1 - palmPosNorm.getY() ) * height,palmPosNorm.getZ() * 50</div>
+				<div class="SorceCode">&ensp;);</div>
+				<div class="SorceCode">&ensp;rotateX( -1 * hand.direction().pitch() );</div>
+				<div class="SorceCode">&ensp;rotateY( -1 * hand.direction().yaw() );</div>
+				<div class="SorceCode">&ensp;rotateZ( -1 * hand.palmNormal().roll() );</div>
+				<div class="SorceCode">&ensp;noStroke();</div>
+				<div class="SorceCode">&ensp;fill(255);</div>
+				<div class="SorceCode">&ensp;lights();</div>
+				<div class="SorceCode">&ensp;box ( 80, 10, 100 );</div>
+				<div class="SorceCode">&ensp;stroke(255);</div>
+				<div class="SorceCode">&ensp;line ( 0, 0, 0, 50 );</div>
+				<div class="SorceCode">&ensp;popMatrix();</div>
+				<div class="SorceCode CodeDeepskyblue">}</div>
+			</div>
+			<div class = "MarginTB05">
+				drawPalm関数で、手のひらを描画します。
+				手のひらの位置は、『<span class = "CodeYellow">Vector palmPos</span>』『<span class = "CodeYellow">Vector palmPosNorm</span>』に代入したあと、描画処理へ移ります。
+			</div>
+			<div class = "MarginTB10">下は、ビジュアライザで2本の手のひらを3D表示した時の動画です。</div>
+			<video controls width = "300px">
+				<source src="../../media/LeapMotion/test_Palm.mp4" type="video/mp4">
+				Sorry, your browser doesn't support embedded videos.
+			</video>
+			<div class = "MarginTB05">
+				<div>動画のように<span class = "green_line">2本の手のひらが検知</span>でき、かつ<span class = "green_line">四角い3D図形が連動して表示</span>されれば、完了です。</div>
+				<div>※コード内容は、リファレンス資料をみながら各自で解析してください。</div>
+			</div>
+			<span class="midasi" id = "finger">指を3Dで表示する</span>
+			<div class = "MarginTB05">「<span class = "yellow_line">test_finger.pde</span>」のプログラムと照らし合わせみながら、解析しましょう。</div>
+			<a href = "https://github.com/antladybug/monozukuri/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_finger.txt」ファイルの格納場所へ</div></a>
+			<div class = "CommentBox paddingL05">
+				<i class="gg-danger"></i>
+				<div>サンプルの拡張子は、『<span class = "CodeMaroon linen_line">txt</span>』です。</div>
+				<div>processingで動作させるときは拡張子『<span class = "CodeMaroon linen_line">pde</span>』で利用ください。</div>
+			</div>
+			<div class = "MarginTB05" id = "CodeSpace">
+				<div class="FileType">test_finger.pde</div>
+				<div class="SorceCode CodeDeepskyblue" style = "counter-increment: StepNum 38!important;">void drawFingerTip(Hand hand) {</div>
+				<div class="SorceCode">&ensp;FingerList fingers = hand.fingers();</div>
+				<div class="SorceCode">&ensp;for(int i = 0; i < fingers.count(); i++) {</div>
+				<div class="SorceCode">&ensp;&ensp;Finger finger = fingers.get(i);</div>
+				<div class="SorceCode">&ensp;&ensp;Vector tipPos = finger.tipPosition();</div>
+				<div class="SorceCode">&ensp;&ensp;Vector tipPosNorm = iBox.normalizePoint(tipPos, false);</div>
+				<div class="SorceCode">&ensp;&ensp;if(finger.isExtended() == true) {</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;fill(255, 0, 0);</div>
+				<div class="SorceCode">&ensp;&ensp;} else {</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;fill(255, 255, 255);</div>
+				<div class="SorceCode">&ensp;&ensp;}</div>
+				<div class="SorceCode">&ensp;&ensp;pushMatrix();</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;translate(tipPosNorm.getX() * width,</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;(1 - tipPosNorm.getY()) * height,tipPosNorm.getZ() * 50);</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;noStroke();</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;lights();</div>
+				<div class="SorceCode">&ensp;&ensp;&ensp;sphere(20);</div>
+				<div class="SorceCode">&ensp;&ensp;popMatrix();</div>
+				<div class="SorceCode">&ensp;}</div>
+				<div class="SorceCode CodeDeepskyblue">}</div>
+			</div>
+			<div class = "MarginTB05">
+				<div>検知した手を1本ずつ描画します。</div>
+				<div>さらに、指ごとに描画するため、drawFingerTip関数を実行しています。</div>
+			</div>
+			<div class = "MarginTB10">下は、ビジュアライザで、各指を3D表示した時の動画です。</div>
+			<video controls width = "300px">
+				<source src="../../media/LeapMotion/test_finger.mp4" type="video/mp4">
+				Sorry, your browser doesn't support embedded videos.
+			</video>
+			<div class = "MarginTB05">
+				<div>動画のように<span class = "green_line">2本の手のひらと指が検知</span>できて、<span class = "green_line">四角い3D図形が連動して表示</span>されれば、完了です。</div>
+				<div>ちなみに、<span class = "blue_line FontBold">手のひらに隠している指は赤で描画</span>、<span class = "blue_line FontBold">そうでない(隠してない)指は白で表示する</span>ように制御しています。</div>
+				<div>※コード内容は、リファレンス資料をみながら各自で解析してください。</div>
+			</div>
+			<span class="midasi" id = "fingercolor">[演習]指の色わけ制御の練習</span>
+			<div class = "MarginTB05">
+				「<span class = "yellow_line">test_finger.pde</span>」のプログラムを次のように、編集してください。
+			</div>
+			<div class = "MarginTB05" id = "youken">
+				<div>[要件]</div>
+				<div>手のひらで隠れていない指を、『青色』で表示する。</div>
+			</div>
+			<div class = "MarginTB05">
+				編集したファイルは「<span class = "yellow_line">test_fingerblue.pde</span>」のプログラムと、名前をつけて保存しておいてください。提出は不要です。
 			</div>
 			<div class = "MarginTB10">以上です。</div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotion.html#MoveBase">もどる</a></div>

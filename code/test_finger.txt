@@ -47,7 +47,8 @@ void drawFingerTip(Hand hand) {
 			fill(255, 255, 255);
 		}
 		pushMatrix();
-			translate(tipPosNorm.getX() * width, (1 - tipPosNorm.getY()) * height,tipPosNorm.getZ() * 50);
+			translate(tipPosNorm.getX() * width, 
+			(1 - tipPosNorm.getY()) * height,tipPosNorm.getZ() * 50);
 			noStroke();
 			lights();
 			sphere(20);

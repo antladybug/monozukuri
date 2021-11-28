@@ -43,20 +43,10 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .midasi:before{ width: 1rem; height: 1.2rem; background: white; border: 1px solid #000000; left: 3px; top: .4rem;}
 .midasi:after{ border-left: 3px solid #2D5AA1; border-bottom: 3px solid #2D5AA1; width: 18px; height: 5px; -webkit-transform: rotate( -45deg ); transform: rotate( -45deg ); left: 6px; top: 8px; }
 .FileType{ max-width: 20%; background-color: #2D5AA1; padding-left: .3rem; padding-top: .3rem; color: white; border-radius: 5px 5px 0 0; font-size: .9em; }
-.SorceCode {
- counter-increment: StepNum 1;
- background-color: black;
- color: white;
-}
-.SorceCode::before {
- content: counter(StepNum, decimal-leading-zero);
- color: #2D5AA1;
- padding: 0 .2rem;
- margin-right: .3rem;
- background-color: black;
- border-right: solid thin grey;
-}
+.SorceCode { counter-increment: StepNum 1; background-color: black; color: white; }
+.SorceCode::before { content: counter(StepNum, decimal-leading-zero); color: #2D5AA1; padding: 0 .2rem; margin-right: .3rem; background-color: black; border-right: solid thin grey; }
 #CodeSpace { width: 93%; }
+#youken { font-weight: bold; border: 1px solid black; padding: .5rem; width: 80%; background-color: lightgoldenrodyellow; }
 
 /* 画像 */
 /* leapmotion3-1 */
