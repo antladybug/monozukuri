@@ -12,7 +12,50 @@
 		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
 		<h1 class = "making">ピースサインを検知する</h1>
 		<div id = "wrapper">
-			<div class = "MarginTB10">[演習問題]ピースサインを検知するプログラムを作成しましょう。</div>
+			<div class = "MarginTB10">次の内容のプログラムを作成してください。</div>
+			<div class = "MarginTB05" id = "youken">
+				<div>[要件]</div>
+				<div>ピースサインを検知したら、対象の指（人差し指と中指）を「特定の色（赤と白い以外、任意）」で表示するプログラム</div>
+				<div>ピースサインの定義：人差し指と中指以外の指が手の中に隠れている状態</div>
+			</div>
+			<div class = "CommentBox paddingL05 MarginT30">
+				<i class="gg-danger"></i>
+				<div class = "MarginTB10">※<a href = "https://antladybug.github.io/monozukuri/sub/leapmotion/leapmotionS3_5.html" target = "_blank" style = "text-decoration: underline solid red!important; }">前回の演習問題</a>の回答例です。参考にしてください。</div>
+				<div class = "MarginTB05" id = "youken">
+					<div>[要件]</div>
+					<div>手のひらで隠れていない指を、『青色』で表示する。</div>
+				</div>
+				<div class = "MarginTB05" id = "CodeSpace">
+					<div class="FileType">test_finger.pde</div>
+					<div class="SorceCode" style = "counter-increment: StepNum 38!important;">void drawFingerTip(Hand hand) {</div>
+					<div class="SorceCode">&ensp;FingerList fingers = hand.fingers();</div>
+					<div class="SorceCode">&ensp;for(int i = 0; i < fingers.count(); i++) {</div>
+					<div class="SorceCode">&ensp;&ensp;Finger finger = fingers.get(i);</div>
+					<div class="SorceCode">&ensp;&ensp;Vector tipPos = finger.tipPosition();</div>
+					<div class="SorceCode">&ensp;&ensp;Vector tipPosNorm = iBox.normalizePoint(tipPos, false);</div>
+					<div class="SorceCode CodeYellow">&ensp;&ensp;if(finger.<span class = "CodeRed FontBold">isExtended()</span> == true) {</div>
+					<div class="SorceCode CodeYellow">&ensp;&ensp;&ensp;fill(<span class = "CodeDeepskyblue FontBold">0</span>, 0, <span class = "CodeDeepskyblue FontBold">255</span>);</div>
+					<div class="SorceCode">&ensp;&ensp;<span class = "CodeYellow">}</span> else {</div>
+					<div class="SorceCode">&ensp;&ensp;&ensp;fill(255, 255, 255);</div>
+					<div class="SorceCode">&ensp;&ensp;}</div>
+					<div class="SorceCode">&ensp;&ensp;pushMatrix();</div>
+					<div class="SorceCode">&ensp;&ensp;&ensp;translate(tipPosNorm.getX() * width,</div>
+					<div class="SorceCode">&ensp;&ensp;&ensp;(1 - tipPosNorm.getY()) * height,tipPosNorm.getZ() * 50);</div>
+					<div class="SorceCode">&ensp;&ensp;&ensp;noStroke();</div>
+					<div class="SorceCode">&ensp;&ensp;&ensp;lights();</div>
+					<div class="SorceCode">&ensp;&ensp;&ensp;sphere(20);</div>
+					<div class="SorceCode">&ensp;&ensp;popMatrix();</div>
+					<div class="SorceCode">&ensp;}</div>
+					<div class="SorceCode">}</div>
+				</div>
+				<div>45行目の<span class = "CodeDeepskyblue FontBold">青字の箇所</span>を変更します。</div>
+				<div>ここは検知した指のオブジェクトをループ処理で1本ずつ、色描画している箇所です。</div>
+				<div>44行目の『<span class = "CodeRed FontBold">isExtended</span>』は、対象の指が立っている（隠れていない）かどうかを返す関数です。</div>
+				<div>判定処理で、fill関数をコールします。</div>
+				<div>この関数は、引数が3つとも0の場合は白と描画し、赤は第1引数のみ255で指定します。</div>
+				<div>青は、第3引数のみ255と指定するため、上記のようなコード修正で対応可能です。</div>
+			</div>
+			
 			<div class = "MarginTB10">以上です。</div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotion.html#MoveBase">もどる</a></div>
 			<div class = "Back"><a href = "../leapmotion/leapmotion.html#MoveBase"></a></div>
