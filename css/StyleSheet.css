@@ -65,7 +65,6 @@ a.kizai:hover { opacity: 0.6; }
 /* 画像 */
 .kizaiImg1 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }
 .kizaiImg2 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -204px 0; }
-.kizaiImg3{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -5px 75px; }
 
 /* icons */
 .gg-danger { box-sizing: border-box; position: relative; display: block; transform: scale( var( --ggs,1 ) ); width: 20px; height: 20px; border: 2px solid; border-radius: 40px }
