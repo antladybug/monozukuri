@@ -1,0 +1,26 @@
+@charset "utf-8"
+<style>
+		#board {
+			border-collapse:collapse;
+		}
+		td {
+			width:100px;
+			height:100px;
+			font-size:48pt;
+			text-align:center;
+			border:solid;
+		}
+		td.bg {
+			background-color:#C0FFC0;
+		}
+		td.br {
+			background-color:#FFC0C0;
+		}
+		td.bb {
+			background-color:#C0C0FF;
+		}
+		.bg:hover {
+			background-color:#C0C0C0;
+		}
+	</style>
+	
