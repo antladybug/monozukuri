@@ -7,6 +7,15 @@
 		<link rel="shortcut icon" type="image/x-icon" href="../../img/icon.png">
 		<link rel = "stylesheet" href = "../../css/sub_StyleSheet.css" />
 		<link rel = "stylesheet" href = "../../css/StyleSheet.css" />
+		<style>
+			input#acd-check1, input#acd-check2 { display: none; height: 0; }
+			.acd-label{ border-top:  .3em solid #2D5AA1; background: lightsteelblue; color: #2D5AA1; font-weight: bold; display: block; padding: .5rem; }
+			.acd-content{ height: 0; visibility: hidden; }
+			.acd-check:checked + .acd-label + .acd-content{ height: 100%; background-color: linen;  padding: 1em; visibility: visible; }
+			#footer { position: fixed; }
+			.acd-label::after{ width: .6em; height: .6em; margin-left: .2em; font-size: .7em; border-top: .3em solid #2D5AA1; border-right: .3em solid #2D5AA1; border-right-radius: 20px; border-radius: 0 .12em; content: ""; transform: translate( .5em,-.1em ) rotate( 135deg ); display: inline-block; margin-right: 1em; }
+			.acd-check:checked + .acd-label::after{ content: ""; width: .6em; height: .6em; margin-left: .2em; font-size: .7em; border-top: .3em solid #2D5AA1; border-right: .3em solid #2D5AA1; border-radius: 0 .12em; transform: translate( .5em, 0 ) rotate( -40deg ); display: inline-block; }
+		</style>
 	</head>
 	<body id = "Page_top">
 		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
@@ -15,18 +24,29 @@
 			<div class = "MarginTB10">次の内容のプログラムを作成してください。</div>
 			<div class = "MarginTB05" id = "youken">
 				<div>[要件]</div>
-				<div>ピースサインを検知したら、対象の指（人差し指と中指）を「特定の色（赤と白い以外、任意）」で表示するプログラム</div>
-				<div>ピースサインの定義：人差し指と中指以外の指が手の中に隠れている状態</div>
+				<div>ピースサインを検知したら、人差し指と中指の丸図形を「任意の色（赤と白以外）」で表示する</div>
 			</div>
-			<div class = "CommentBox paddingL05 MarginT30">
-				<i class="gg-danger"></i>
-				<div class = "MarginTB10">※<a href = "https://antladybug.github.io/monozukuri/sub/leapmotion/leapmotionS3_5.html" target = "_blank" style = "text-decoration: underline solid red!important; }">前回の演習問題</a>の回答例です。参考にしてください。</div>
+			<div class = "paddingT1em">[指をすべて折りたたんでいるの場合]</div>
+			<div class = "LM_6Img1"></div>
+			<div class = "paddingT1em">[パーの場合]</div>
+			<div class = "LM_6Img2"></div>
+			<div class = "paddingT1em">[ピースサインの場合]<span class = "CodeMidnightblue">※青の図形で表示</span></div>
+			<div class = "LM_6Img3"></div>
+			<div class = "MarginTB05">
+				<div class = "FontBold">ヒント:</div>
+				<div class = "paddingL05">①指情報のオブジェクト仕様を調査し、人差し指と中指が出ている（手のひらで隠れていない）状態を判定する条件を、考えます。</div>
+				<div class = "paddingL05">②上の①がまとまったら、指の図形を色別に表示している箇所に埋め込んでみましょう。</div>
+			</div>
+			<input id="acd-check1" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check1">前回の演習問題の回答をみる</label>
+			<div class="acd-content">
+					<div class = "MarginTB10">※<a href = "https://antladybug.github.io/gotoprocon/sub/leapmotion/leapmotionS3_5.html" target = "_blank" style = "text-decoration: underline solid red!important; }">前回の演習問題</a>の回答例です。参考にしてください。</div>
 				<div class = "MarginTB05" id = "youken">
 					<div>[要件]</div>
 					<div>手のひらで隠れていない指を、『青色』で表示する。</div>
 				</div>
 				<div class = "MarginTB05" id = "CodeSpace">
-					<div class="FileType">test_finger.pde</div>
+					<div class="FileType">test_fingerblue.pde</div>
 					<div class="SorceCode" style = "counter-increment: StepNum 38!important;">void drawFingerTip(Hand hand) {</div>
 					<div class="SorceCode">&ensp;FingerList fingers = hand.fingers();</div>
 					<div class="SorceCode">&ensp;for(int i = 0; i < fingers.count(); i++) {</div>
@@ -55,7 +75,6 @@
 				<div>この関数は、引数が3つとも0の場合は白と描画し、赤は第1引数のみ255で指定します。</div>
 				<div>青は、第3引数のみ255と指定するため、上記のようなコード修正で対応可能です。</div>
 			</div>
-			
 			<div class = "MarginTB10">以上です。</div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotion.html#MoveBase">もどる</a></div>
 			<div class = "Back"><a href = "../leapmotion/leapmotion.html#MoveBase"></a></div>

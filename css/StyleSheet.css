@@ -28,6 +28,9 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .CodeYellow { color: gold; }
 .Codeyellow { color: yellow; }
 .CodeDeepskyblue { color: deepskyblue; }
+.CodeMidnightblue { color: midnightblue; }
+.CodeLime { color: lime; }
+.CodeBG { background-color: black; padding: 0 .5rem; }
 .FontBold { font-weight: bold; }
 .PaddingTB0{ margin-top: 0; margin-bottom: 0; }
 .PaddingTB05{ margin-top: .5em; margin-bottom: .5em; }
@@ -61,11 +64,18 @@ a.kizai:hover { opacity: 0.6; }
 .linen_line { background:linear-gradient( transparent 60%, plum 0% ); padding: 0 .2rem; }
 .blue_line { background:linear-gradient( transparent 75%, blue 0% ); padding: 0 .2rem; }
 .green_line { background:linear-gradient( transparent 75%, springgreen 0% ); padding: 0 .2rem; }
+.lime_line { background:linear-gradient( transparent 75%, lime 0% ); padding: 0 .2rem; }
+.orange_line { background:linear-gradient( transparent 75%, orange 0% ); padding: 0 .2rem; }
+.royalblue_line { background:linear-gradient( transparent 75%, royalblue 0% ); padding: 0 .2rem; }
+.lightskyblue_line { background:linear-gradient( transparent 75%, lightskyblue 0% ); padding: 0 .2rem; }
+.steelblue_line { background:linear-gradient( transparent 75%, steelblue 0% ); padding: 0 .2rem; }
+.dodgerblue_line { background:linear-gradient( transparent 75%, dodgerblue 0% ); padding: 0 .2rem; }
+.lightgray_line { background:linear-gradient( transparent 75%, lightgray 0% ); padding: 0 .2rem; }
 
 /* 画像 */
 .kizaiImg1 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 146px; height: 73px; }
 .kizaiImg2 { background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -204px 0; }
-.kizaiImg3{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -5px 75px; }
+.kizaiImg3{ background: url( "../img/kizai.png" ); border: .01em grey solid; width: 142px; height: 75px; background-position: -5px -77px; }
 
 /* icons */
 .gg-danger { box-sizing: border-box; position: relative; display: block; transform: scale( var( --ggs,1 ) ); width: 20px; height: 20px; border: 2px solid; border-radius: 40px }

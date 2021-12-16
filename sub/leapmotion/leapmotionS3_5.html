@@ -18,9 +18,9 @@
 				<div><a href = "#finger" style = "color: white!important;">・指を3Dで表示する</a></div>
 				<div><a href = "#fingercolor" style = "color: white!important;">・[演習]指の色わけ制御の練習</a></div>
 			</div>
-			<span class="midasi" id = "palm">手のひらを3Dで表示する</span>
+			<span class="midasi MarginTB05" id = "palm">手のひらを3Dで表示する</span>
 			<div class = "MarginTB05">「<span class = "yellow_line">test_palm.pde</span>」のプログラムと照らし合わせみながら、解析しましょう。</div>
-			<a href = "https://github.com/antladybug/monozukuri/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_palm.txt」ファイルの格納場所へ</div></a>
+			<a href = "https://github.com/antladybug/gotoprocon/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_palm.txt」ファイルの格納場所へ</div></a>
 			<div class = "CommentBox paddingL05">
 				<i class="gg-danger"></i>
 				<div>サンプルの拡張子は、『<span class = "CodeMaroon linen_line">txt</span>』です。</div>
@@ -41,22 +41,23 @@
 				<div>LeapJavaの読込と、コントローラ本体・座標変換オブジェクトを取得しています。</div>
 				<div>そのあと、ウィンドウサイズの設定をします。</div>
 			</div>
-			<div class = "MarginTB05">
-				次のdraw関数の詳細は、<a href = "file:///C:/Users/Wada/Desktop/%E3%82%82%E3%81%AE%E3%81%A5%E3%81%8F%E3%82%8A/WEB%E6%95%99%E6%9D%90/sub/leapmotion/leapmotionS3_4.html" target = "_blank" style = "text-decoration: underline solid red!important; }">APIの概要</a>にて紹介してます。
+			<div class = "CommentBox paddingL05">
+				<i class="gg-danger"></i>
+				draw関数の詳細は、<a href = "./leapmotionS3_4.html" target = "_blank" style = "text-decoration: underline solid red!important; }">APIの概要</a>にて。
 			</div>
 			<div class = "MarginTB05" id = "CodeSpace">
 				<div class="FileType">test_palm.pde</div>
 				<div class="SorceCode CodeDeepskyblue" style = "counter-increment: StepNum 21!important;">void drawPalm(Hand hand) {</div>
-				<div class="SorceCode CodeRed">&ensp;<span class = "CodeYellow">Vector palmPos</span> = hand.palmPosition();</div>
-				<div class="SorceCode CodeRed">&ensp;<span class = "CodeYellow">Vector palmPosNorm</span> = iBox.normalizePoint(palmPos, false);</div>
+				<div class="SorceCode CodeRed">&ensp;<span class = "CodeLime">Vector palmPos</span> = hand.palmPosition();</div>
+				<div class="SorceCode CodeRed">&ensp;<span class = "CodeLime">Vector palmPosNorm</span> = iBox.normalizePoint(palmPos, false);</div>
 				<div class="SorceCode">&ensp;pushMatrix();</div>
 				<div class="SorceCode">&ensp;translate(</div>
 				<div class="SorceCode">&ensp;&ensp;palmPosNorm.getX() * width,</div>
 				<div class="SorceCode">&ensp;&ensp;( 1 - palmPosNorm.getY() ) * height,palmPosNorm.getZ() * 50</div>
 				<div class="SorceCode">&ensp;);</div>
-				<div class="SorceCode">&ensp;rotateX( -1 * hand.direction().pitch() );</div>
-				<div class="SorceCode">&ensp;rotateY( -1 * hand.direction().yaw() );</div>
-				<div class="SorceCode">&ensp;rotateZ( -1 * hand.palmNormal().roll() );</div>
+				<div class="SorceCode CodeYellow">&ensp;rotateX( -1 * hand.direction().pitch() );</div>
+				<div class="SorceCode CodeYellow">&ensp;rotateY( -1 * hand.direction().yaw() );</div>
+				<div class="SorceCode CodeYellow">&ensp;rotateZ( -1 * hand.palmNormal().roll() );</div>
 				<div class="SorceCode">&ensp;noStroke();</div>
 				<div class="SorceCode">&ensp;fill(255);</div>
 				<div class="SorceCode">&ensp;lights();</div>
@@ -68,7 +69,7 @@
 			</div>
 			<div class = "MarginTB05">
 				drawPalm関数で、手のひらを描画します。
-				手のひらの位置は、『<span class = "CodeYellow">Vector palmPos</span>』『<span class = "CodeYellow">Vector palmPosNorm</span>』に代入したあと、描画処理へ移ります。
+				手のひらの位置は、『<span class = "CodeLime CodeBG">Vector palmPos</span>』『<span class = "CodeLime CodeBG">Vector palmPosNorm</span>』に代入したあと、描画処理へ移ります。
 			</div>
 			<div class = "MarginTB10">下は、ビジュアライザで2本の手のひらを3D表示した時の動画です。</div>
 			<video controls width = "300px">
@@ -79,9 +80,9 @@
 				<div>動画のように<span class = "green_line">2本の手のひらが検知</span>でき、かつ<span class = "green_line">四角い3D図形が連動して表示</span>されれば、完了です。</div>
 				<div>※コード内容は、リファレンス資料をみながら各自で解析してください。</div>
 			</div>
-			<span class="midasi" id = "finger">指を3Dで表示する</span>
+			<span class="midasi MarginTB05" id = "finger">指を3Dで表示する</span>
 			<div class = "MarginTB05">「<span class = "yellow_line">test_finger.pde</span>」のプログラムと照らし合わせみながら、解析しましょう。</div>
-			<a href = "https://github.com/antladybug/monozukuri/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_finger.txt」ファイルの格納場所へ</div></a>
+			<a href = "https://github.com/antladybug/gotoprocon/tree/main/code" target = "_blank"><div class = "GotoCode MarginB03">「test_finger.txt」ファイルの格納場所へ</div></a>
 			<div class = "CommentBox paddingL05">
 				<i class="gg-danger"></i>
 				<div>サンプルの拡張子は、『<span class = "CodeMaroon linen_line">txt</span>』です。</div>
@@ -112,7 +113,7 @@
 			</div>
 			<div class = "MarginTB05">
 				<div>検知した手を1本ずつ描画します。</div>
-				<div>さらに、指ごとに描画するため、drawFingerTip関数を実行しています。</div>
+				<div>さらに、指ごとに描画するため、<span class = "CodeDeepskyblue CodeBG">drawFingerTip</span>関数を実行しています。</div>
 			</div>
 			<div class = "MarginTB10">下は、ビジュアライザで、各指を3D表示した時の動画です。</div>
 			<video controls width = "300px">
@@ -124,16 +125,18 @@
 				<div>ちなみに、<span class = "blue_line FontBold">手のひらに隠している指は赤で描画</span>、<span class = "blue_line FontBold">そうでない(隠してない)指は白で表示する</span>ように制御しています。</div>
 				<div>※コード内容は、リファレンス資料をみながら各自で解析してください。</div>
 			</div>
-			<span class="midasi" id = "fingercolor">[演習]指の色わけ制御の練習</span>
+			<span class="midasi MarginTB05" id = "fingercolor">[演習]指の色わけ制御の練習</span>
+			<div>ここでは、<span class = "CodeDeepskyblue CodeBG">drawFingerTip</span>関数の編集に挑戦しましょう。</div>
 			<div class = "MarginTB05">
-				「<span class = "yellow_line">test_finger.pde</span>」のプログラムを次のように、編集してください。
+				「<span class = "yellow_line">test_finger.pde</span>」のプログラムを基に、次の要件どおりに編集してください。
 			</div>
 			<div class = "MarginTB05" id = "youken">
 				<div>[要件]</div>
-				<div>手のひらで隠れていない指を、『青色』で表示する。</div>
+				<div>手のひらで隠れていない指を、『<span class = "CodeMidnightblue">青色</span>』で表示する。</div>
 			</div>
 			<div class = "MarginTB05">
-				編集したファイルは「<span class = "yellow_line">test_fingerblue.pde</span>」のプログラムと、名前をつけて保存しておいてください。提出は不要です。
+				<div>編集したファイルは「<span class = "linen_line">test_fingerblue.pde</span>」のプログラムと、名前をつけて保存しておいてください。</div>
+				<div class = "CodeRed">※提出は不要ですが、次回の課題で関連したプログラミングを行います。</div>
 			</div>
 			<div class = "MarginTB10">以上です。</div>
 			<div id = "Step" style = "margin-left: 0!important;"><a href = "../leapmotion/leapmotion.html#MoveBase">もどる</a></div>
