@@ -122,7 +122,18 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .meshApp8 { background: url( "../img/meshApp.png" ); border: .01em grey solid; width: 300px; height: 200px; background-position: -947px -337px; }
 .meshApp9 { background: url( "../img/meshApp.png" ); border: .01em grey solid; width: 300px; height: 180px; background-position: 0 -655px; }
 .meshApp10 { background: url( "../img/meshApp.png" ); border: .01em grey solid; width: 300px; height: 210px; background-position: -328px -663px }
-.meshSDK1 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 300px; height: 200px; background-position: -321px -337px; }
+.meshSDK1 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 200px; background-position: 0 0; }
+.meshSDK2 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 230px; background-position: -364px 0; }
+.meshSDK3 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 290px; background-position: -727px 0; }
+.meshSDK4 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 200px; background-position: 0 -262px; }
+.meshSDK5 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 100px; background-position: -350px -262px; }
+.meshSDK6 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -351px -388px; }
+.meshSDKU1 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: 0 0; }
+.meshSDKU2 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -369px 0; }
+.meshSDKU3 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -735px 0; }
+.meshSDKU4 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -1096px 0; }
+.meshSDKU5 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: 0 -340px; }
+.meshSDKU6 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 325px; background-position: -358px -340px; }
 
 /* monaca */
 .monacaImg13 { background: url( "../img/Monaca.png" ); border: .01em grey solid; width: 218px; height: 400px; background-position: -245px 0; }
