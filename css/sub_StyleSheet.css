@@ -47,7 +47,9 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .SorceCode::before { content: counter(StepNum, decimal-leading-zero); color: #2D5AA1; padding: 0 .2rem; margin-right: .3rem; background-color: black; border-right: solid thin grey; }
 #CodeSpace { width: 93%; }
 #youken { font-weight: bold; border: 1px solid black; padding: .5rem; width: 80%; background-color: lightgoldenrodyellow; }
-
+#Q { color: #2D5AA1; font-weight: bold; font-size: 1.3rem; padding: 0 .7rem; }
+#A { color: #cc3300; font-weight: bold; font-size: 1.3rem; padding: 0 .7rem; }
+#TS { margin-top: 2rem; font-weight: bold; font-size: 1.2rem; }
 /* 画像 */
 /* leapmotion3-1 */
 .LM3_1Img1 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 184px; height: 142px; }
@@ -122,6 +124,12 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .meshApp8 { background: url( "../img/meshApp.png" ); border: .01em grey solid; width: 300px; height: 200px; background-position: -947px -337px; }
 .meshApp9 { background: url( "../img/meshApp.png" ); border: .01em grey solid; width: 300px; height: 180px; background-position: 0 -655px; }
 .meshApp10 { background: url( "../img/meshApp.png" ); border: .01em grey solid; width: 300px; height: 210px; background-position: -328px -663px }
+.meshAppSI1 { background: url( "../img/meshSignin.png" ); border: .01em grey solid; width: 125px; height: 420px; background-position: 0 0 }
+.meshAppSI2 { background: url( "../img/meshSignin.png" ); border: .01em grey solid; width: 125px; height: 200px; background-position: -189px -20px }
+.meshAppSI3 { background: url( "../img/meshSignin.png" ); border: .01em grey solid; width: 350px; height: 410px; background-position: -326px -1px }
+.meshAppSI4 { background: url( "../img/meshSignin.png" ); border: .01em grey solid; width: 350px; height: 130px; background-position: -683px -1px }
+.meshAppIFTTT1 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 125px; height: 420px; background-position: 0 -1px }
+.meshAppIFTTT2 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 125px; height: 200px; background-position: -189px -20px }
 .meshSDK1 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 200px; background-position: 0 0; }
 .meshSDK2 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 230px; background-position: -364px 0; }
 .meshSDK3 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 290px; background-position: -727px 0; }
