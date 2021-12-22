@@ -50,6 +50,14 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 #Q { color: #2D5AA1; font-weight: bold; font-size: 1.3rem; padding: 0 .7rem; }
 #A { color: #cc3300; font-weight: bold; font-size: 1.3rem; padding: 0 .7rem; }
 #TS { margin-top: 2rem; font-weight: bold; font-size: 1.2rem; }
+.limeBlock { background-color:lime; padding: 0 .7rem; }
+.orangeBlock { background-color:orange; padding: 0 .7rem; }
+.royalblueBlock { background-color:royalblue; padding: 0 .7rem; }
+.lightskyblueBlock { background-color:lightskyblue; padding: 0 .7rem; }
+.steelblueBlock { background-color:steelblue; padding: 0 .7rem; }
+.dodgerblueBlock { background-color:dodgerblue; padding: 0 .7rem; }
+.lightgrayBlock { background-color:lightgray; padding: 0 .7rem; }
+
 /* 画像 */
 /* leapmotion3-1 */
 .LM3_1Img1 { background: url( "../img/LM3_1.png" ); border: .01em grey solid; width: 184px; height: 142px; }
@@ -139,28 +147,66 @@ h1 { padding: .7em; font-size: 1.2em; color: white; background-color: #2D5AA1; m
 .meshAppIFTTT9 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 338px; height: 434px; background-position: -738px -452px }
 .meshAppIFTTT10 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 200px; background-position: -1097px -452px }
 .meshAppIFTTT11 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT12 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT13 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT14 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT15 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT16 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT17 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT18 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT19 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
-.meshAppIFTTT20 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1098px -676px }
+.meshAppIFTTT12 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 400px; background-position: -1460px -450px }
+.meshAppIFTTT13 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 184px; background-position: -2px -893px }
+.meshAppIFTTT14 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 275px; background-position: -376px -890px }
+.meshAppIFTTT15 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 272px; background-position: -379px -1224px }
+.meshAppIFTTT16 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 180px; background-position: -731px -909px }
+.meshAppIFTTT17 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 340px; height: 265px; background-position: -759px -1132px }
+.meshAppIFTTT18 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 470px; background-position: -1099px -887px }
+.meshAppIFTTT19 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 620px; background-position: -1469px -887px }
+.meshAppIFTTT20 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 345px; height: 280px; background-position: 0 -1589px }
+.meshAppIFTTT21 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -362px -1590px }
+.meshAppIFTTT22 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 300px; background-position: -732px -1585px }
+.meshAppIFTTT23 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 333px; background-position: -1110px -1585px }
+.meshAppIFTTT24 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -1493px -1595px }
+.meshAppIFTTT25 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 255px; background-position: -1514px -1805px }
+.meshAppIFTTT26 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 349px; height: 450px; background-position: -1885px -1602px }
+.meshAppIFTTT27 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 450px; background-position: -2243px -1602px }
+.meshAppIFTTT28 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 349px; height: 346px; background-position: -2607px -1604px }
+.meshAppIFTTT29 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 305px; background-position: -2608px -2000px }
+.meshAppIFTTT30 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 370px; background-position: -2px -2000px }
+.meshAppIFTTT31 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 199px; background-position: -370px -2000px }
+.meshAppIFTTT32 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 165px; background-position: -729px -2000px }
+.meshAppIFTTT33 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 295px; height: 385px; background-position: -1105px -2010px }
+.meshAppIFTTT34 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 330px; background-position: -1434px -2112px }
+.meshAppIFTTT35 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 450px; background-position: -1812px -2130px }
+.meshAppIFTTT36 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 320px; background-position: -2193px -2134px }
+.meshAppIFTTT37 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 385px; background-position: -2194px -2500px }
+.meshAppIFTTTS41 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 270px; background-position: 0 -2624px }
+.meshAppIFTTTS42 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 235px; background-position: -377px -2624px }
+.meshAppIFTTTS43 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 235px; background-position: -747px -2626px }
+.meshAppIFTTTS44 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 207px; background-position: -1104px -2629px }
+.meshAppIFTTTS45 { background: url( "../img/meshIFTTT.png" ); border: .01em grey solid; width: 350px; height: 190px; background-position: -1478px -2629px }
+
 .meshSDK1 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 200px; background-position: 0 0; }
 .meshSDK2 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 230px; background-position: -364px 0; }
 .meshSDK3 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 290px; background-position: -727px 0; }
 .meshSDK4 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 200px; background-position: 0 -262px; }
 .meshSDK5 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 100px; background-position: -350px -262px; }
 .meshSDK6 { background: url( "../img/meshSdk.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -351px -388px; }
-.meshSDKU1 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: 0 0; }
-.meshSDKU2 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -369px 0; }
+.meshSDKU1 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 345px; height: 210px; background-position: 0 0; }
+.meshSDKU2 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 345px; height: 210px; background-position: -369px 0; }
 .meshSDKU3 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -735px 0; }
 .meshSDKU4 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: -1096px 0; }
-.meshSDKU5 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 210px; background-position: 0 -340px; }
+.meshSDKU5 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 340px; background-position: 0 -340px; }
 .meshSDKU6 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 325px; background-position: -358px -340px; }
-
+.meshSDKU7 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 330px; height: 200px; background-position: -741px -350px; }
+.meshSDKU8 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 325px; height: 250px; background-position: -1097px -352px; }
+.meshSDKU9 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 325px; height: 250px; background-position: 0 -700px; }
+.meshSDKU10 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 325px; height: 250px; background-position: -1097px -352px; }
+.meshSDKU11 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 100px; background-position: -1096px 0; }
+.meshSDKU12 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 200px; height: 150px; background-position: -410px -921px; }
+.meshSDKU13 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 300px; height: 100px; background-position: -680px -698px; }
+.meshSDKU14 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 349px; height: 186px; background-position: -659px -846px; }
+.meshSDKU15 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 349px; height: 186px; background-position: -659px -1042px; }
+.meshSDKU16 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 349px; height: 199px; background-position: -659px -1235px; }
+.meshSDKU17 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 145px; background-position: -1046px -696px; }
+.meshSDKU18 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 200px; height: 330px; background-position: -1404px -697px; }
+.meshSDKU19 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 215px; background-position: -1265px -1048px; }
+.meshSDKU20 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 350px; height: 177px; background-position: -1264px -1272px; }
+.meshSDKU21 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 200px; height: 200px; background-position: -1404px -793px; }
+.meshSDKU22 { background: url( "../img/meshSdkU.png" ); border: .01em grey solid; width: 347px; height: 332px; background-position: 0 -1153px; }
 /* monaca */
 .monacaImg13 { background: url( "../img/Monaca.png" ); border: .01em grey solid; width: 218px; height: 400px; background-position: -245px 0; }
 .monacaImg1S { background: url( "../img/Monaca.png" ); border: .01em grey solid; width: 218px; height: 400px; }
