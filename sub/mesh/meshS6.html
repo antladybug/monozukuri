@@ -10,14 +10,14 @@
 	</head>
 	<body id = "Page_top">
 		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
-		<h1 class = "making">MESH SDKをつかう</h1>
+		<h1 class = "making">ログ出力するSDKをつくる</h1>
 		<div id = "wrapper">
 			<div class = "MarginTB10">
 				<span class = "FontBold">MESHのSDK(Software Development Kit)</span>の公式サイトでサインインして、オリジナルのブロックを作成します。
 			</div>
 			<div id = "JumpOfficial"><a href = "https://meshprj.com/sdk-jp/" target = "_blank">SDK公式サイト</a></div>
 			<div class = "MarginTB10">
-				次のような画面にて、
+				次の画面にて、操作します。
 			</div>
 			<div class = "meshSDKU1"></div>
 			<div class = "MarginTB10">
@@ -33,20 +33,105 @@
 			</div>
 			<div class = "meshSDKU4"></div>
 			<div class = "MarginTB10">
-				次の赤枠の「<span class = "CodeRed FontBold">Code</span>」ボタンをクリックします。
+				赤枠の<span class = "CodeRed FontBold">①New Function</span>の▶をクリックしてメニューを広げ、赤枠の<span class = "CodeRed FontBold">②Code</span>▶をクリックします。
 			</div>
 			<div class = "meshSDKU5"></div>
 			<div class = "MarginTB10">
-				下のような画面に遷移します。<span class = "CodeMidnightblue FontBold">青枠の領域</span>にプログラムを入力します。言語はJavaScriptです。
+				下のようにcodeの入力欄が開きます。<span class = "CodeMidnightblue FontBold">青枠の領域</span>にプログラムを入力します。言語はJavaScriptです。
 			</div>
 			<div class = "meshSDKU6"></div>
-			log(" こんにちは！ ");
-
-			return {
-			    resultType : "continue"
-			};
-			<div id = "Step" style = "margin-left: 0!important;"><a href = "mesh.html">もどる</a></div>
-			<div class = "Back"><a href = "mesh.html"></a></div>
+			<div class = "MarginTB10">
+				codeには、『<span class = "orange_line">Initialize</span>』『<span class = "orange_line">Receive</span>』『<span class = "orange_line">Execute</span>』『<span class = "orange_line">Result</span>』のメソッドが、タブで分かれています。
+			</div>
+			<div class = "meshSDKU7 MarginTB10"></div>
+			<div class = "meshSDKU8"></div>
+			<div class = "Syutten">出典元:https://meshprj.com/sdk/doc/ja/</div>
+			<div class = "MarginTB10">
+				詳細は、次のマニュアルを解読しましょう。
+			</div>
+			<div id = "JumpOfficial"><a href = "https://meshprj.com/sdk/doc/ja/" target = "_blank">リファレンスページへ</a></div>
+			<div class = "MarginTB10">
+				『<span class = "orange_line">Execute</span>』メソッドに、次のコードを入力しましょう。ログに文字列『こんにちは』を出力する命令です。
+			</div>
+			<div class = "MarginTB05" id = "CodeSpace">
+					<div class="FileType">Execute</div>
+					<div class="SorceCode Codeyellow">log(" こんにちは！ ");</div>
+					<div class="SorceCode"></div>
+					<div class="SorceCode">return {</div>
+					<div class="SorceCode">&ensp;resultType : "continue"</div>
+					<div class="SorceCode">};</div>
+				</div>
+			<div class = "meshSDKU9"></div>
+			<div class = "MarginTB10">
+				スクロールアップし、赤枠「<span class = "CodeRed FontBold">Save</span>」で、保存します。
+			</div>
+			<div class = "meshSDKU11"></div>
+			<div class = "MarginTB10">
+				これで、SDKの作成は完了です。
+			</div>
+			<div class = "MarginTB10">
+				<span class = "lightskyblue_line FontBold">ここからは登録したSDKを、MESHブロックに連携します。MESHアカウントでログインした上で、操作してください。</span>
+			</div>
+			<div class = "MarginTB10">
+				MESHアプリのインストール先フォルダの赤枠『<span class = "CodeRed FontBold">MESH.exe</span>』を、クリックして起動します。
+			</div>
+			<div class = "meshApp1"></div>
+			<div class = "MarginTB10">
+				MESHアプリの右側「<span class = "CodeRed FontBold">ブロック</span>」のエリアを下にスクロールダウンします。
+			</div>
+			<div class = "meshAppIFTTT1"></div>
+			<div class = "MarginTB10">
+				<span class = "CodeGreen FontBold">カスタム枠内</span>の、赤枠『<span class = "CodeRed FontBold">追加</span>』を、クリックします。
+			</div>
+			<div class = "meshSDKU12"></div>
+			<div class = "MarginTB10">
+				次の取得中ウィンドウが、終わるのを待ちます。
+			</div>
+			<div class = "meshSDKU13"></div>
+			<div class = "MarginTB10">
+				次のようなウィンドウに遷移します。
+			</div>
+			<div class = "meshSDKU14"></div>
+			<div class = "MarginTB10">
+				登録した赤枠『<span class = "CodeRed FontBold">New Block</span>』を、クリックします。
+			</div>
+			<div class = "meshSDKU15"></div>
+			<div class = "MarginTB10">
+				赤枠『<span class = "CodeRed FontBold">追加</span>』を、クリックします。
+			</div>
+			<div class = "meshSDKU16"></div>
+			<div class = "MarginTB10">
+				次のウィンドウに遷移したら、赤枠『<span class = "CodeRed FontBold">OK</span>』を、クリックします。
+			</div>
+			<div class = "meshSDKU17"></div>
+			<div class = "MarginTB10">
+				MESHアプリの右ブロックに赤枠『<span class = "CodeRed FontBold">New Block</span>』が追加されたことを確認します。
+			</div>
+			<div class = "meshSDKU18"></div>
+			<div class = "MarginTB10">
+				赤枠「<span class = "CodeRed FontBold">①New Block</span>」を選択し、「<span class = "CodeRed FontBold">②キャンパス領域</span>」へドラッグアンドドロップします。
+			</div>
+			<div class = "meshSDKU19"></div>
+			<div class = "MarginTB10">
+				任意のブロック青枠「<span class = "CodeMidnightblue FontBold">ブロック</span>」と赤枠「<span class = "CodeRed FontBold">New Block</span>」を連携して、動作確認しましょう。
+			</div>
+			<div class = "meshSDKU20"></div>
+			<div class = "MarginTB10">
+				 <span class = "lightskyblue_line FontBold">イベント発生をトリガ(ここでは青ブロックのボタンを1回クリック)に、MESHアプリのログに『こんにちは』の文字列が送信されたら、成功です。</span>
+			</div>
+			<div class = "MarginTB10">
+				[ログの確認方法]<br>MESHアプリの右下「カスタム」グループ内の『ログ』をクリックします。
+			</div>
+			<div class = "meshSDKU21"></div>
+			<div class = "MarginTB10">
+				イベント発生後に、下のログ領域を確認しましょう。
+			</div>
+			<div class = "meshSDKU22"></div>
+			<div class = "MarginTB10">
+				以上です。
+			</div>
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "mesh.html#3">もどる</a></div>
+			<div class = "Back"><a href = "mesh.html#3"></a></div>
 			<div class = "ToTop"><a href = "#Page_top"></a></div>
 		</div>
 		<div id = "footer">COPYRIGHT© IWASAKI GAKUEN. ALL RIGHTS RESERVED.</div>
