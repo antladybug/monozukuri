@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<title>[Raspberry Pi]ものづくりプロジェクト&#8544;</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../../img/icon.png">
+		<link rel = "stylesheet" href = "../../css/sub_StyleSheet.css" />
+		<link rel = "stylesheet" href = "../../css/StyleSheet.css" />
+	</head>
+	<body id = "Page_top">
+		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
+		<h1 class = "making">VNCとraspberrypiの連携</h1>
+		<div id = "wrapper">
+			<div class = "MarginTB10">
+				VNC(Virtual Network Computing)はラズパイのデスクトップ画面をPCから表示・制御できます。例えば、ラズパイに入っているアプリを画面を見ながらPC側で動かしたり、ラズパイに繋がっているカメラの映像をPCで見たりすることが可能になります。単なる画面転送ではなく、キーボードやマウスも使えます。
+			</div>
+
+			<div class = "MarginTB10">
+				左上のメニューアイコン(ラズベリーアイコン)をクリックして、<span class = "CodeGreen FontBold">設定 > Rapberry Piの設定 </span>の順に選択します。
+			</div>
+		
+            <img src="img/r24.png"alt="r24">
+
+			<div class = "MarginTB10">
+				インターフェースタブを選択して<span class = "CodeGreen FontBold">VNCを有効</span>にしてOKを押します。
+				このときSSHも有効にすることをお勧めします。後に行うディスプレイ設定ミスでVNCが使えずSSHだけは使えるような状態になったときに役立つためです。
+			</div>
+			<img src="img/r25.png"alt="r25">
+		    
+			<div class = "MarginTB10">
+				画面の右上にこのような「VNCアイコン」が出てくればラズパイ側の設定は完了です。
+			</div>
+			<img src="img/r26.png"alt="r26">
+		    
+			<div class = "MarginTB10">
+				右上の「VNCアイコン」をクリックすることにより簡単にIPアドレスのチェックが出来ます。
+				このIPアドレスは後に必要になる場合もあります。ちなみに、IPアドレスは不変ではなく、WiFiルーターをリセットした場合に変わる可能性があります。
+			</div>
+			<img src="img/r27.png"alt="r27">
+			
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "v2_3.html">次のステップへ</a></div>
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "raspberrypi.html">Raspberry Piトップへ</a></div>
+			<div class = "Back"><a href = "raspberrypi.html"></a></div>
+			<div class = "ToTop"><a href = "#Page_top"></a></div>
+		</div>
+		<div id = "footer">COPYRIGHT© IWASAKI GAKUEN. ALL RIGHTS RESERVED.</div>
+	</body>
+</html>
