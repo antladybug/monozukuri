@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<title>[Raspberry Pi]ものづくりプロジェクト&#8544;</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../../img/icon.png">
+		<link rel = "stylesheet" href = "../../css/sub_StyleSheet.css" />
+		<link rel = "stylesheet" href = "../../css/StyleSheet.css" />
+	</head>
+	<body id = "Page_top">
+		<div id = "menu"><a href = "../../index.html" class = "ToHome"></a></div>
+		<h1 class = "making">Raspberry Pi 初期設定手順</h1>
+		<div id = "wrapper">
+			<div class = "MarginTB10">
+				
+                書き込みが終わったmicroSDカードをラズパイに挿入します。
+                microSDの表裏は挿さる方向にしか挿さりません。
+                microSDの表面の文字が見える方向です。
+                必要な周辺機器を接続して起動します。
+			</div>
+			<img src="../../img/setuzoku.png"alt="setuzoku">
+		    <div class = "MarginTB10">
+            青い画面や黒い画面などが出てきますが、ちょっと待つとすぐにデスクトップ画面が表示されます。
+			</div>
+            <img src="../../img/r13.png"alt="r13">
+            <div class = "MarginTB10">
+            このようなウィンドウが出ていると思いますので、それぞれ指示に従って設定します。
+            ［Next］をクリックします。
+            </div>
+		    <img src="../../img/r14.png"alt="r14">
+			<div class = "MarginTB10 FontBold">
+                [国・言語・タイムゾーン設定]
+            </div>
+            <div class = "MarginTB10">
+            Japanを選択してください。残りの２つはJapanese, Tokyo と自動的に選ばれると思います。確認出来たら Next ボタンを押します。
+			</div>
+            <img src="../../img/r15.png"alt="r15">
+            <div class = "MarginTB10 FontBold">
+                [パスワード設定]
+            </div>
+            <div class = "MarginTB10">
+            パスワードは後でいつでも変更できますので、ここは<span class = "CodeGreen FontBold">空欄のまま </span> ボタンでOKです。
+            デフォルトのパスワードは<span class = "CodeGreen FontBold">「 raspberry 」</span>です。
+            変更したい人は別のパスワード(8文字以上)を入力して下さい。
+            下段のテキストボックスは確認用です。
+            ちなみに、ラズパイのパスワード入力は起動時には不要で、
+            無線でアクセスしたり、ソフトをインストールしたりするときに使用します。
+			</div>
+            <img src="../../img/r16.png"alt="r16">
+            <div class = "MarginTB10 FontBold">
+               [画面設定]
+            </div>
+            <div class = "MarginTB10">
+            もしディスプレイに映っている画面が完全にフルスクリーンでなく、
+            周辺が黒枠になっているなら、チェックボックスにチェックを入れます。  
+            この設定も後で変更可能です（オーバースキャン設定）
+            Next ボタンを押します。
+            周辺の黒枠はすぐには画面に反映されません。
+            最後に再起動したときに反映されます。
+			</div>
+            <img src="../../img/r17.png"alt="r17">
+            <div class = "MarginTB10 FontBold">
+              [WiFi設定]
+            </div>
+            <div class = "MarginTB10">
+            しばらく待っていると、WiFiネットワークのリストが出てきます。
+			</div>
+            <img src="../../img/r18.png"alt="r18">
+            <div class = "MarginTB10">
+            自分のWiFiルーターのSSIDを選択してNext ボタンを押します
+			</div>
+            <img src="../../img/r19.png"alt="r19">
+            <div class = "MarginTB10">
+            Password 入力画面になるので、
+            WiFiルーターのKEYをキーボードから打ち込んで、
+            Next ボタンを押します。
+			</div>
+            <img src="../../img/r20.png"alt="r20">
+            <div class = "MarginTB10">
+            接続が完了すると画面右上の表示が次のように変化します。
+			</div>
+            <img src="../../img/Vnc_13.png"alt="Vnc_13"> <img src="../../img/Vnc_14.png"alt="Vnc_14">
+            <div class = "MarginTB10 FontBold">
+              [ソフトウェア更新]
+            </div>
+            <div class = "MarginTB10">
+            OSやアプリをチェックして最新に更新することができます。
+            Skip しても後でコマンドで実行することは可能ですが、
+            Next ボタンを押して待ちましょう。
+			</div>
+            <img src="../../img/r21.png"alt="r21">
+            <div class = "MarginTB10">
+            このようなupdate画面が出てきて、結構時間がかかる場合があります。
+			</div>
+            <img src="../../img/r22.png"alt="r22">
+            <div class = "MarginTB10">
+            このように System is up to date というウィンドウが出てくれば
+            終了です。OKボタンを押します。
+			</div>
+            <img src="../../img/r23.png"alt="r23">
+            <div class = "MarginTB10">
+            画面設定などが反映されていない場合があります。
+            Restart ボタンを押して再起動することで全て反映されます！
+            再起動はまた黒い画面になりますが、
+            しばらくするとデスクトップ画面になります。
+			</div>
+            <img src="../../img/r23-2.png"alt="r23-2">
+            
+			
+			
+            
+			
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "v2_4.html">次のステップへ</a></div>
+			<div id = "Step" style = "margin-left: 0!important;"><a href = "raspberrypi.html">Raspberry Piトップへ</a></div>
+			<div class = "Back"><a href = "rasos.html"></a></div>
+			<div class = "ToTop"><a href = "#Page_top"></a></div>
+		</div>
+		<div id = "footer">COPYRIGHT© IWASAKI GAKUEN. ALL RIGHTS RESERVED.</div>
+	</body>
+</html>
