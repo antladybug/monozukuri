@@ -1,0 +1,44 @@
+const puppeteer = require('puppeteer');	// NodeJS
+const tflag = 0;						// 遅延情報フラグ
+const cron = require('node-cron');		// タイマー管理
+
+// スケジューリング
+// 毎日6時00分,6時30分,6時45分,7時00分,7時30分,7時45分
+cron.schedule( '0 0,30,45 6,7, * * *', () => {
+	var Obniz = require("obniz");
+	var obniz = new Obniz("2906-6363"); // 接続端末ID
+	// 接続中
+	obniz.onconnect = async function () {
+		while(true){
+			var Flag =  scrapeing_sample();
+			if ( Flag != 0 ){
+				// LED点灯
+				led = obniz.wired("LED", {anode: 0, cathode: 1});//長い,短いの順番
+				led .on();
+			}
+		}
+	}
+} );
+
+const scrapeing_sample = async () => {
+	const browser = await puppeteer.launch();
+
+	const page = await browser.newPage();
+	//遅延サイトをスクレイピング
+	const url = 'https://transit.yahoo.co.jp/diainfo/area/4';
+	await page.goto(url,{ waitUntil: 'domcontentloaded' });
+
+	// 各記事のタイトルを取得
+	const target = '.trouble > table > tbody > tr > td > a';
+	const links = await page.$$eval(target, links => {
+		return links.map(link => link.textContent);
+	});
+	// 出力
+	links.forEach( function( item ) {
+		console.log( item );
+		if( item == "銚子電鉄線" ) { tflag = 1; }// ◎フラグ更新
+	});
+	browser.close();
+	// 遅延情報フラグを返却
+	return tflag;
+}
